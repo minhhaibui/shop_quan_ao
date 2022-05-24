@@ -79,7 +79,9 @@ body {
 .cart-left:hover,
 .cart-right:hover,
 .number-phone:hover,
-.nav .nav-item > a:hover {
+.nav .nav-item > a:hover,
+.dropdown .dropdown_item:hover > a,
+.dropdown .dropdown_item:hover {
   color: var(--light-red);
   cursor: pointer;
 }
@@ -141,10 +143,7 @@ body {
   visibility: visible;
   cursor: pointer;
 }
-.dropdown .dropdown_item:hover > a {
-  color: var(--light-red);
-  background-color: #dc4f3f0c;
-}
+
 /* end header_bottom */
 
 /* start slider */
