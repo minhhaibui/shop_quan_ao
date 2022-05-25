@@ -110,7 +110,7 @@ body {
   font-weight: 500;
 }
 .dropdown {
-  transition: all 150ms ease-in-out;
+  transition: all .5s ease-in-out;
   position: absolute;
   top: 100%;
   left: 0;
@@ -118,9 +118,9 @@ body {
   opacity: 0;
   visibility: hidden;
   min-width: 164px;
-  border-top: 1px solid var(--black);
   background: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.451);
+  transform: translate(-35px, 35px);
 }
 .dropdown_item {
   padding: 10px 5px;
@@ -141,6 +141,7 @@ body {
   opacity: 1;
   visibility: visible;
   cursor: pointer;
+  transform: translate(-35px, 1px);
 }
 .dropdown .dropdown_item:hover {
   background-color: #dc4f3f06;
