@@ -1,3 +1,4 @@
+// start slider
 var index = 1;
 changeImage = function () {
   var imgs = ["./css/img/slider_1.webp", "./css/img/slider_2.webp"];
@@ -7,4 +8,4 @@ changeImage = function () {
     index = 0;
   }
 };
-setInterval(changeImage, 2000);
+setInterval(changeImage, 3000);
