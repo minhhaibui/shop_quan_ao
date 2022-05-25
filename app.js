@@ -1,3 +1,14 @@
+const $ = document.querySelector.bind(document);
+
+const logoBtn = $('.logo');
+
+//logoBtn
+logoBtn.addEventListener("click", () => {
+  location.reload();
+});
+
+
+//Chuyen hinh anh content
 var index = 1;
 changeImage = function () {
   var imgs = ["./css/img/slider_1.webp", "./css/img/slider_2.webp"];
@@ -7,4 +18,4 @@ changeImage = function () {
     index = 0;
   }
 };
-setInterval(changeImage, 2000);
+setInterval(changeImage, 5000);
