@@ -31,8 +31,8 @@ function nextImg () {
   imgSlider[indexImg].style.display = "block";
   imgSlider[indexImg - 1].style.display = "none";
 }
-iconLeftBtn.addEventListener("click", () => {
-  console.log('1');
+iconRightBtn.addEventListener("click", () => {
+  nextImg();
 })
 
 console.log(iconRightBtn)
