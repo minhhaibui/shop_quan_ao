@@ -156,15 +156,36 @@ body {
   margin-top: 136px;
   max-height: 690px;
   max-width: 100%;
+  position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .slider_image {
-  display: block;
-  max-width: 100%;
-  max-height: 690px;
-  width: auto;
-  height: auto;
+  height: 100%;
+  width: 1519px;
+  flex: 1 0 100%;
+  user-select: none;
 }
+.slider_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slider-wrapper {
+  display: flex;
+  position: relative;
+  transition: transform 0.25s linear;
+  height: 100%;
+  transform: translate3d(0px, 0px, 0px);  
+  transition: all 0.5s ease 0s;
+}
+
 .slider_gallery {
   position: relative;
   overflow: hidden;
@@ -174,26 +195,53 @@ body {
   height: auto;
 }
 .icon_next {
-  font-size: 4rem;
-  color: var(--black);
-  background-color: var(--grey);
-  border-radius: 50%;
-  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.icon_left, .icon_right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.icon_right {
+  right: 15px;
 }
 
 .icon_left {
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
+  left: 15px;
 }
-.icon_right {
+/* .icon_right {
   position: absolute;
   top: 50%;
   right: 1rem;
   transform: translateY(-50%);
-}
+} */
 /* end slider */
 /* section */
 .content {
@@ -357,13 +405,13 @@ body {
 .icon_card-left {
   position: absolute;
   top: 50%;
-  left: -4rem;
+  left: -5rem;
   transform: translateY(-50%);
 }
 .icon_card-right {
   position: absolute;
   top: 50%;
-  right: -5rem;
+  right: -6rem;
   transform: translateY(-50%);
 }
 
