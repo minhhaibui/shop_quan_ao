@@ -10,6 +10,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-size: 1.6rem;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -19,7 +23,6 @@ a {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
 }
 #main {
 }
@@ -549,7 +552,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  cursor: pointer;
 }
 .section_blog-image {
   max-width: 30rem;
