@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(1, 1, 95);
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+
+.main{
+}
+
+.container{
+    width: 1280px;
+    height: 650px;
+    background-color: #ccc;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+.path{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 10px 16px 10px;
+}
+
+.text-path{
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgb(42, 22, 120);
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content-section{
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.heading-content{
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px;
+    border-bottom: 2px solid #c7e90a;
+}
+
+.create-btn{
+    margin: 20px 0px 10px 10px;
+    border-bottom: 2px solid rgb(151, 146, 146);
+    padding-bottom: 12px;
+}
+
+.btn-item-sub{
+    background-color: rgb(60, 208, 94);
+    border-radius: 4px;
+    padding: 3px;
+    border: none;
+    font-weight: 600;
+    font-size: 10px;
+    
+}
+
+.btn-item-sub:hover{
+    background-color: #ff7b06;  
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.form__input{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    
+}
+
+.input-item{
+    width: 25%;
+    margin: 5px;
+}
+
+.region-input{
+    background-color: rgb(239, 216, 216);
+    border-radius: 3px;
+    /* border: #1313312; */
+    padding: 8px 7px;
+    width: 250px;
+}
+
+.text-input{
+    margin: 5px;
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+
+
+.up-img-btn{
+    margin-top: 10px;
+    background-color: rgb(43, 6, 44);
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 2px;
+}
+
+.up-img-btn:hover{
+    background-color: #ff7b06;  
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.describe_form{
+    margin-top: 32px;
+}
+
+.describe-input{
+    width: 100%;
+    height: 150px;
+    word-break: break-all;
+    background-color: rgb(239, 216, 216);
+}
+
+
+.select_end_btn{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    
+}
+
+.save-btn{
+    margin-left: 5px;
+    margin-right: 2px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 6px;
+}
+
+.cancel-btn{
+    background-color: tomato;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 6px;
+}
+
+.save-btn:hover,
+.cancel-btn:hover{
+    background-color: rgb(176, 205, 34);  
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav{
+    color: #fff;
+}
+
+.avatar-img{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.sub-text{
+    margin-left: -32px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    /* position: fixed;
+    top: 50px;
+    left: 70px; */
+}
+
+.nav-list{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-left: 10px;
+}
+
+.sub-nav{    
+    padding: 21px 12px;
+    height: 24px;
+    background-color: rgb(1, 1, 95);
+    display: inline-block;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-nav:hover{
+    background-color: #ccc;
+}
+
+.sub-nav-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sign-out-btn{
+    background-color: rgb(218, 218, 64);
+    width: 32px;
+    height: 32px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:20px;
+    right: 20px;
+}
+
+.sign-out-btn:hover{
+    background-color: #000;  
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    color: #fff;
+}
