@@ -707,7 +707,7 @@ body {
 .input-footer{
   display: flex;
   flex-direction: column;
-  /* justify-content: left; */
+  margin-left: 20px;
 }
 
 .input-heading{
@@ -723,6 +723,7 @@ body {
 }
 
 .input_email{
+  width: 100%;
   height: 40px;
   line-height: 40px;
   outline: none;
@@ -732,7 +733,6 @@ body {
   padding: 0 10px;
   font-size: 12px;
   margin-left: 20px;
-  margin-right: 28px;
 }
 
 .btn_footer{
@@ -748,7 +748,7 @@ body {
   border: 1px solid #000;
   overflow: hidden;
   padding: 14px 14px;
-  width: 254px;
+  width: 100%;
   margin-left: 20px;
 }
 
