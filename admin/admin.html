@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./admin_css/admin.css" />
+    <link
+      rel="stylesheet"
+      href="../css/font/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="path">
+          <a href="" class="text-path">Danh sách nhân viên/ Thêm nhân viên</a>
+        </div>
+
+        <div class="content-section">
+          <h3 class="heading-content">Tạo mới sản phẩm</h3>
+
+          <div class="create-btn">
+            <button class="btn-item-sub">
+              <i class="ti-folder"></i>
+              thêm nhà cung cấp
+            </button>
+
+            <button class="btn-item-sub">
+              <i class="ti-folder"></i>
+              Thêm danh mục
+            </button>
+
+            <button class="btn-item-sub">
+              <i class="ti-folder"></i>
+              Thêm tình trạng
+            </button>
+          </div>
+          <div class="form__input">
+            <div class="row">
+              <div class="input-item">
+                <div class="text-input">Mã sản phẩm</div>
+                <input type="text" class="region-input" />
+              </div>
+
+              <div class="input-item">
+                <div class="text-input">Tên sản phẩm</div>
+                <input type="text" class="region-input" />
+              </div>
+
+              <div class="input-item">
+                <div class="text-input">Số lượng</div>
+                <input type="number" class="region-input" />
+              </div>
+
+              <div class="input-item">
+                <div class="text-input">Tình trạng</div>
+                <input type="text" class="region-input" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-item">
+                <div class="text-input">Danh mục</div>
+                <input type="text" class="region-input" />
+              </div>
+
+              <div class="input-item">
+                <div class="text-input">Nhà cung cấp</div>
+                <input type="text" class="region-input" />
+              </div>
+
+              <div class="input-item">
+                <div class="text-input">Giá bán</div>
+                <input type="number" class="region-input" />
+              </div>
+
+              <div class="input-item">
+                <div class="text-input">Giá vốn</div>
+                <input type="number" class="region-input" />
+              </div>
+            </div>
+          </div>
+
+          <div class="select-img">
+            <div class="text-input">Ảnh sản phẩm</div>
+            <button class="up-img-btn">
+              <i class="ti-upload"></i>
+              Chọn ảnh
+            </button>
+          </div>
+
+          <div class="describe_form">
+            <div class="text-input">Mô tả sản phẩm</div>
+            <!-- <input type="text" class="describe-input"> -->
+            <textarea
+              class="describe-input"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              style="resize: none"
+            ></textarea>
+          </div>
+
+          <div class="select_end_btn">
+            <button class="save-btn">Lưu lại</button>
+            <button class="cancel-btn">Hủy bỏ</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav">
+        <div class="avatar-img">
+          <img src="../css/img/admin/ảnh thẻ.jpg" alt="avatar" class="avatar" />
+          <h3 class="name">Vũ Thành</h3>
+          <p class="sub-text">Chào mừng quản trị viên</p>
+        </div>
+        <hr />
+
+        <ul class="nav-list">
+          <div class="tabs-list">
+            <button
+              class="tablinks"
+              onclick="openCity(event, 'home')"
+              id="defaultOpen"
+            >
+              Home
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'report')">
+              Báo cáo
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'account')">
+              Tài khoản
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'management')">
+              Quản lý sản phẩm
+            </button>
+          </div>
+
+          <div class="tabs-control">
+            <!-- tab home -->
+            <div id="home" class="tabcontent">
+              <div class="container">
+                <canvas
+                  id="myChart"
+                  style="width: 100%; max-width: 1000px"
+                ></canvas>
+
+                <div class="statistics-col">
+                  <script>
+                    var xValues = [
+                      "Italy",
+                      "France",
+                      "Spain",
+                      "USA",
+                      "Argentina",
+                    ];
+                    var yValues = [55, 49, 44, 24, 15];
+                    var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                    new Chart("myChart", {
+                      type: "bar",
+                      data: {
+                        labels: xValues,
+                        datasets: [
+                          {
+                            backgroundColor: barColors,
+                            data: yValues,
+                          },
+                        ],
+                      },
+                      options: {
+                        legend: { display: false },
+                        title: {
+                          display: true,
+                          text: "World Wine Production 2018",
+                        },
+                      },
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+            <!-- end home -->
+
+            <!-- tab báo cáo -->
+            <div id="report" class="tabcontent">
+              <div class="container color-black">
+                <div class="path">
+                  <a href="" class="text-path">DANH SÁCH SẢN PHẨM</a>
+                </div>
+
+                <div class="content-section">
+                  <div class="list-btn">
+                    <button class="btn-item">
+                      <i class="ti-plus"></i>
+                      Tạo mới sản phẩm
+                    </button>
+                    <button class="btn-item">
+                      <i class="ti-save"></i>
+                      Tải từ file
+                    </button>
+                    <button class="btn-item">
+                      <i class="ti-printer"></i>
+                      In dữ liệu
+                    </button>
+                    <button class="btn-item">
+                      <i class="ti-files"></i>
+                      Sao chép
+                    </button>
+                    <button class="btn-item">
+                      <i class="ti-file"></i>
+                      Xuất Excel
+                    </button>
+                    <button class="btn-item">
+                      <i class="ti-layout-tab"></i>
+                      Xuất PDF
+                    </button>
+                    <button class="btn-item">
+                      <i class="ti-trash"></i>
+                      Xóa tất cả
+                    </button>
+                  </div>
+
+                  <label for="">Danh mục sản phẩm</label>
+                  <table>
+                    <tr style="background-color: #ddd">
+                      <td><input type="checkbox" /></td>
+                      <td>Mã sản phẩm</td>
+                      <td>Tên sản phẩm</td>
+                      <td>Ảnh</td>
+                      <td>Số lượng</td>
+                      <td>Tình trạng</td>
+                      <td>Giá tiền</td>
+                      <td>Danh mục</td>
+                      <td>Chức năng</td>
+                    </tr>
+
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>Mã sản phẩm</td>
+                      <td>Tên sản phẩm</td>
+                      <td>Ảnh</td>
+                      <td>Số lượng</td>
+                      <td>Tình trạng</td>
+                      <td>Giá tiền</td>
+                      <td>Danh mục</td>
+                      <td>Chức năng</td>
+                    </tr>
+
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>Mã sản phẩm</td>
+                      <td>Tên sản phẩm</td>
+                      <td>Ảnh</td>
+                      <td>Số lượng</td>
+                      <td>Tình trạng</td>
+                      <td>Giá tiền</td>
+                      <td>Danh mục</td>
+                      <td>Chức năng</td>
+                    </tr>
+
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>Mã sản phẩm</td>
+                      <td>Tên sản phẩm</td>
+                      <td>Ảnh</td>
+                      <td>Số lượng</td>
+                      <td>Tình trạng</td>
+                      <td>Giá tiền</td>
+                      <td>Danh mục</td>
+                      <td>Chức năng</td>
+                    </tr>
+
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>Mã sản phẩm</td>
+                      <td>Tên sản phẩm</td>
+                      <td>Ảnh</td>
+                      <td>Số lượng</td>
+                      <td>Tình trạng</td>
+                      <td>Giá tiền</td>
+                      <td>Danh mục</td>
+                      <td>Chức năng</td>
+                    </tr>
+
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>Mã sản phẩm</td>
+                      <td>Tên sản phẩm</td>
+                      <td>Ảnh</td>
+                      <td>Số lượng</td>
+                      <td>Tình trạng</td>
+                      <td>Giá tiền</td>
+                      <td>Danh mục</td>
+                      <td>Chức năng</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- end report -->
+
+            <!-- tab account -->
+            <div id="account" class="tabcontent">
+              <div class="container color-black">
+                <div class="content-section">
+                  <h1 class="heading-account color-black">
+                    Thông tin quản trị viên
+                  </h1>
+                  <div class="avatar-item">
+                    <img
+                      src="./css/img/admin/ảnh thẻ.jpg"
+                      alt="avatar"
+                      class="avatar-account"
+                    />
+                    <h3 class="name color-black">Vũ Chí Thành</h3>
+                  </div>
+
+                  <div class="account-item">
+                    <div class="text-heading">
+                      <i class="ti-bookmark-alt"></i>
+                      <h3>Thông tin chủ tài khoản</h3>
+                    </div>
+
+                    <label for="">Email hiện tại:</label>****@gmail.com <br />
+                    <label for="">Mật khẩu hiện tại:</label> *********
+                    <i class="ti-eye" title="Hiển thị mật khẩu"></i>
+                  </div>
+                  <br />
+                  <div class="account-item">
+                    <div class="text-heading">
+                      <i class="ti-comments"></i>
+                      <h3>Nhật ký hoạt động</h3>
+                    </div>
+
+                    <label for="">Bạn đã thêm một sản phẩm 15 phút trước</label>
+                    <br />
+                    <label for="">Bạn đã xóa một sản phẩm 20 phút trước</label>
+                    <br />
+                    <label for="">Bạn đã thêm một sản phẩm 24 phút trước</label>
+                    <br />
+                    <label for="">Bạn đã sửa một sản phẩm 27 phút trước</label>
+                    <br />
+                    <label for="">Bạn đã thêm một sản phẩm 30 phút trước</label>
+                    <br />
+                  </div>
+                  <br />
+                  <div class="account-item">
+                    <div class="text-heading">
+                      <i class="ti-bookmark-alt"></i>
+                      <h3>Thông tin chủ tài khoản</h3>
+                    </div>
+
+                    <label for="">Email hiện tại:</label>****@gmail.com <br />
+                    <label for="">Mật khẩu hiện tại:</label> *********
+                    <i class="ti-eye" title="Hiển thị mật khẩu"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end account -->
+
+            <!-- tab manager -->
+            <div id="management" class="tabcontent">
+              <div class="container color-black">
+                <div class="path">
+                  <a href="" class="text-path"
+                    >Danh sách nhân viên/ Thêm nhân viên</a
+                  >
+                </div>
+
+                <div class="content-section">
+                  <h3 class="heading-content color-black">Tạo mới sản phẩm</h3>
+
+                  <div class="create-btn">
+                    <button class="btn-item-sub">
+                      <i class="ti-folder"></i>
+                      thêm nhà cung cấp
+                    </button>
+
+                    <button class="btn-item-sub">
+                      <i class="ti-folder"></i>
+                      Thêm danh mục
+                    </button>
+
+                    <button class="btn-item-sub">
+                      <i class="ti-folder"></i>
+                      Thêm tình trạng
+                    </button>
+                  </div>
+                  <div class="form__input">
+                    <div class="row">
+                      <div class="input-item">
+                        <div class="text-input">Mã sản phẩm</div>
+                        <input type="text" class="region-input" />
+                      </div>
+
+                      <div class="input-item">
+                        <div class="text-input">Tên sản phẩm</div>
+                        <input type="text" class="region-input" />
+                      </div>
+
+                      <div class="input-item">
+                        <div class="text-input">Số lượng</div>
+                        <input type="number" class="region-input" />
+                      </div>
+
+                      <div class="input-item">
+                        <div class="text-input">Tình trạng</div>
+                        <input type="text" class="region-input" />
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="input-item">
+                        <div class="text-input">Danh mục</div>
+                        <input type="text" class="region-input" />
+                      </div>
+
+                      <div class="input-item">
+                        <div class="text-input">Nhà cung cấp</div>
+                        <input type="text" class="region-input" />
+                      </div>
+
+                      <div class="input-item">
+                        <div class="text-input">Giá bán</div>
+                        <input type="number" class="region-input" />
+                      </div>
+
+                      <div class="input-item">
+                        <div class="text-input">Giá vốn</div>
+                        <input type="number" class="region-input" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="select-img">
+                    <div class="text-input">Ảnh sản phẩm</div>
+                    <button class="up-img-btn">
+                      <i class="ti-upload"></i>
+                      Chọn ảnh
+                    </button>
+                  </div>
+
+                  <div class="describe_form">
+                    <div class="text-input">Mô tả sản phẩm</div>
+                    <!-- <input type="text" class="describe-input"> -->
+                    <textarea
+                      class="describe-input"
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+
+                  <div class="select_end_btn">
+                    <button class="save-btn">Lưu lại</button>
+                    <button class="cancel-btn">Hủy bỏ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end manager -->
+          </div>
+
+          <!-- <li class="sub-nav"><a href="" class="sub-nav-link" >
+                    <i class="ti-home mr-10"></i>
+                    Home
+                </a></li>
+
+                <li class="sub-nav"><a href="" class="sub-nav-link" >
+                    <i class="ti-bar-chart-alt mr-10"></i>
+                    Báo cáo
+                </a></li>
+
+                <li class="sub-nav"><a href="" class="sub-nav-link" >
+                    <i class="ti-user mr-10"></i>
+                    Tài khoản
+                </a></li>
+
+                <li class="sub-nav">
+                    <a href="" class="sub-nav-link" >
+                    <i class="ti-pencil-alt mr-10"></i>
+                    Quản lý sản phẩm
+                    <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="sub-product">
+                        <li><a href="#">Thêm sản phẩm mới</a></li>
+                        <li><a href="#">Danh sách sản phẩm</a></li>
+                    </ul>
+                </li> -->
+        </ul>
+      </div>
+
+      <!-- btn đăng suất -->
+      <a class="sign-out-btn" title="Đăng suất">
+        <i class="ti-share"></i>
+      </a>
+    </div>
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
