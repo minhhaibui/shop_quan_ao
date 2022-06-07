@@ -12,8 +12,28 @@ body{
     background-color: rgb(1, 1, 95);
 }
 
+.opacity-8{
+    opacity: 0.8;
+}
+
+.dp-pl{
+    display: flex;
+}
+
 .mr-10{
     margin-right: 10px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .color-black{
@@ -21,16 +41,19 @@ body{
 }
 
 .main{
+    position: relative;
 }
 
 .container{
-    width: 86%;
-    height: 85%;
+    width: 83%;
+    height: 100%;
     background-color: #ccc;
-    position: fixed;
+    position: absolute;
     left: 240px;
-    top: 130px;
+    /* top: 100px; */
+    bottom: 0px;
     border-radius: 5px;   
+    overflow-y: auto;  
 }
 
 .path{
@@ -114,8 +137,12 @@ body{
     width: 250px;
 }
 
+.select-img{
+    margin-top: 20px;
+}
+
 .text-input{
-    margin: 5px;
+    margin: 4px;
     font-size: 13px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
@@ -123,7 +150,7 @@ body{
 
 
 .up-img-btn{
-    margin-top: 10px;
+    margin-top: 5px;
     background-color: rgb(43, 6, 44);
     color: #fff;
     border: none;
@@ -328,16 +355,15 @@ body{
 }
 
 .tabcontent {
-    float: left;
+    float: left; 
     padding: 0px 12px;
-    /* border: 1px solid #ccc; */
     width: 70%;
     border-left: none;
     height: 250px;
 }
 
 .tabs-control{
-      
+    
 }
 
 .heading-account{
@@ -345,6 +371,33 @@ body{
     text-transform: uppercase;
     margin-bottom: 30px;
     
+}
+
+.list-form-account{
+    margin-top: 80px;
+}
+
+.form-account{
+    width: 60%;
+    height: 15%;
+    display: flex;
+    margin: auto;
+}
+
+.account-item{
+    box-shadow: 20px 20px 50px 10px pink inset;
+    margin: 5px 15px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 370px;
+}
+
+.account-item:hover{
+    transform: scale(1.1);
+}
+
+.header-item{
+    text-transform: uppercase;
 }
 
 .text-heading{
@@ -357,11 +410,10 @@ body{
     width: 100px;
     height: 100px;
     border: 3px solid rgb(60, 53, 200);
-
 }
 
 .avatar-item{
-    text-align: center;
+    position: fixed;
 }
 
 .list-btn{
@@ -385,11 +437,126 @@ body{
     cursor: pointer;
 }
 
-table,th,td{
+
+th,td{
+    padding: 5px;
     border-style: solid ;
     border-collapse: collapse;
 }
 
-th,td{
+table{
+    width: 95%;
+    border-style: solid ;
+    border-collapse: collapse;
+}
+
+.list-product{
+    height: 500px;
+    overflow: auto;
+}
+
+.lable-item{
+    display: flex;
+    justify-content: space-between;
     padding: 5px;
+    font-weight: 700;
+}
+
+.lable-item input{
+    margin-right: 77px;
+}
+
+.list-statistical{
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+    border-radius: 2px;
+}
+
+.worked{
+    font-size: 18px;
+    padding: 5px;
+}
+
+.sub-worked{
+    font-size: 12px;
+    opacity: 0.8;
+    margin-left: 5px;
+}
+
+.list-status{
+    margin: 24px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12px;
+    
+}
+
+.report-data{
+    width: 248px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 15px;
+}
+
+.report-data:hover{
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.04);
+}
+
+.amount-product{
+    text-align: center;
+    color: #2673dd;
+}
+
+.analisis-item{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.chart-layout {
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+
+.chart-layout__item {
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    height: var(--percent);
+    background-color: #EF5122;
+}
+
+.month{
+    font-size: 14px;
+    word-spacing: 29px;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
+.wrapper-home{
+    display: flex;
+    margin: 20px;
+}
+
+.access-item{
+    display: flex;
+    
+}
+
+.ratio-item{
+    padding: 30px;
+}
+
+.count-number{
+    font-weight: 700;
+    font-size: 20px;
 }

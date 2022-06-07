@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD:admin.html
-    <link rel="stylesheet" href="./css/admin.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/font/themify-icons-font/themify-icons/themify-icons.css">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-=======
     <link rel="stylesheet" href="./admin_css/admin.css">
     <link rel="stylesheet" href="../css/font/themify-icons-font/themify-icons/themify-icons.css">
->>>>>>> 17d2e89c95edaec112c0fbf375c21f4c2ab0c512:admin/admin.html
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="main">
-<<<<<<< HEAD:admin.html
-       
-        <div class="nav">
-            <div class="avatar-img">
-                <img src="./css/img/admin/ảnh thẻ.jpg" alt="avatar" class="avatar">
-                <h3 class="name">Vũ Tuấn Dũng</h3>
-=======
         <div class="container">
             <div class="path">
-               <a href="" class="text-path">Danh sách nhân viên/ Thêm nhân viên</a>
+                <a href="" class="text-path">Danh sách nhân viên/ Thêm nhân viên</a>
             </div>
 
             <div class="content-section">
                 <h3 class="heading-content">Tạo mới sản phẩm</h3>
-                
+
                 <div class="create-btn">
                     <button class="btn-item-sub">
                         <i class="ti-folder"></i>
@@ -59,17 +45,17 @@
                             <div class="text-input">Mã sản phẩm</div>
                             <input type="text" class="region-input">
                         </div>
-    
+
                         <div class="input-item">
                             <div class="text-input">Tên sản phẩm</div>
                             <input type="text" class="region-input">
                         </div>
-    
+
                         <div class="input-item">
                             <div class="text-input">Số lượng</div>
                             <input type="number" class="region-input">
                         </div>
-    
+
                         <div class="input-item">
                             <div class="text-input">Tình trạng</div>
                             <input type="text" class="region-input">
@@ -81,23 +67,23 @@
                             <div class="text-input">Danh mục</div>
                             <input type="text" class="region-input">
                         </div>
-    
+
                         <div class="input-item">
                             <div class="text-input">Nhà cung cấp</div>
                             <input type="text" class="region-input">
                         </div>
-    
+
                         <div class="input-item">
                             <div class="text-input">Giá bán</div>
                             <input type="number" class="region-input">
                         </div>
-    
+
                         <div class="input-item">
                             <div class="text-input">Giá vốn</div>
                             <input type="number" class="region-input">
                         </div>
                     </div>
-                                       
+
                 </div>
 
                 <div class="select-img">
@@ -113,75 +99,152 @@
                     <!-- <input type="text" class="describe-input"> -->
                     <textarea class="describe-input" name="" id="" cols="30" rows="10" style="resize: none;"></textarea>
                 </div>
-                
+
                 <div class="select_end_btn">
                     <button class="save-btn">Lưu lại</button>
                     <button class="cancel-btn">Hủy bỏ</button>
                 </div>
-                
+
             </div>
         </div>
 
         <div class="nav">
             <div class="avatar-img">
                 <img src="../css/img/admin/ảnh thẻ.jpg" alt="avatar" class="avatar">
-                <h3 class="name">Vũ Thành</h3>
->>>>>>> 17d2e89c95edaec112c0fbf375c21f4c2ab0c512:admin/admin.html
+                <h3 class="name">Vũ Tuấn Dũng</h3>
                 <p class="sub-text">Chào mừng quản trị viên</p>
             </div>
             <hr>
 
-            <ul class="nav-list">
+            <div class="nav-list">
                 <div class="tabs-list">
-                <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
-                <button class="tablinks" onclick="openCity(event, 'report')">Báo cáo</button>
-                <button class="tablinks" onclick="openCity(event, 'account')">Tài khoản</button>
-                <button class="tablinks" onclick="openCity(event, 'management')">Quản lý sản phẩm</button>
+                    <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+                    <button class="tablinks" onclick="openCity(event, 'report')">Báo cáo</button>
+                    <button class="tablinks" onclick="openCity(event, 'account')">Tài khoản</button>
+                    <button class="tablinks" onclick="openCity(event, 'management')">Quản lý sản phẩm</button>
                 </div>
-               
+
                 <div class="tabs-control">
-                     <!-- tab home -->
+                    <!-- tab home -->
                     <div id="home" class="tabcontent">
-                       <div class="container ">
-                        <canvas id="myChart" style="width:100%;max-width:1000px;"></canvas>
+                        <div class="container">
+                            <div class="list-statistical mt-16">
+                                <h3 class="worked">Danh sách cần làm</h3>
+                                <div class="sub-worked">Những việc bạn sẽ phải làm</div>
 
-                        <div class="statistics-col">
-                            <script>
-                                var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-                                var yValues = [55, 49, 44, 24, 15];
-                                var barColors = ["red", "green","blue","orange","brown"];
-    
-                                    new Chart("myChart", {
-                                    type: "bar",
-                                    data: {
-                                    labels: xValues,
-                                    datasets: [{    
-                                    backgroundColor: barColors,
-                                    data: yValues
-                                    }]
-                                    },
-                                    options: {
-                                    legend: {display: false},
-                                    title: {
-                                        display: true,
-                                        text: "World Wine Production 2018"
-                                    }
-                                }
-                            });
-                            </script>
-                        </div>
+                                <div class="list-status">
+                                    <div class="report-data">
+                                        <div class="amount-product">12</div>
+                                        <p class="text-center">Chờ xác nhận</p>
+                                    </div>
 
+                                    <div class="report-data">
+                                        <div class="amount-product">15</div>
+                                        <p class="text-center">Chờ lấy hàng</p>
+                                    </div>
+
+                                    <div class="report-data">
+                                        <div class="amount-product">20</div>
+                                        <p class="text-center">Đã xử lý</p>
+                                    </div>
+
+                                    <div class="report-data">
+                                        <div class="amount-product">6</div>
+                                        <p class="text-center">Đơn hủy</p>
+                                    </div>
+                                </div>
+
+                                <div class="list-status">
+                                    <div class="report-data">
+                                        <div class="amount-product">2</div>
+                                        <p class="text-center">Trả Hàng / Hoàn Tiền Chờ Xử Lý</p>
+                                    </div>
+
+                                    <div class="report-data">
+                                        <div class="amount-product">0</div>
+                                        <p class="text-center">Sản Phẩm Bị Tạm Khóa</p>
+                                    </div>
+
+                                    <div class="report-data">
+                                        <div class="amount-product">5</div>
+                                        <p class="text-center">Sản Phẩm Hết Hàng</p>
+                                    </div>
+
+                                    <div class="report-data">
+                                        <div class="amount-product">2</div>
+                                        <p class="text-center">Chương Trình Khuyến Mãi Chờ Xử Lý</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-statistical mt-16">
+                                <h3 class="worked">Phân Tích Bán Hàng</h3>
+                                <div class="sub-worked">Tổng quan về dữ liệu của cửa hàng cho kích thước của đơn
+                                    hàng đã xác nhận</div>
+                                <div class="wrapper-home">
+                                    <div class="analisis-item">
+                                        <p class="text-sale">Doanh số (6 tháng đầu năm)
+                                            <i class="ti-help-alt"></i>
+                                        </p>
+                                        <div class="chart-layout">
+                                            <div class="chart-layout__item" style="--percent: 10%">10%</div>
+                                            <div class="chart-layout__item" style="--percent: 20%">20%</div>
+                                            <div class="chart-layout__item" style="--percent: 40%">40%</div>
+                                            <div class="chart-layout__item" style="--percent: 90%">90%</div>
+                                            <div class="chart-layout__item" style="--percent: 80%">80%</div>
+                                            <div class="chart-layout__item" style="--percent: 40%">40%</div>
+                                        </div>
+                                        <p class="month">Tháng1 Tháng2 Tháng3 Tháng4 Tháng5 Tháng6</p>
+                                    </div>
+
+                                    <div class="analisis-item">
+                                        <div class="access-item">
+                                            <div class="ratio-item">
+                                                <p class="text-ratio opacity-8 mb-8">Lượt truy cập <i
+                                                        class="ti-help-alt"></i></p>
+                                                <div class="count-number mb-8">89</div>
+                                                <div class="text-compare opacity-8">so với hôm qua.</div>
+                                            </div>
+
+                                            <div class="ratio-item">
+                                                <p class="text-ratio opacity-8 mb-8">Lượt xem <i
+                                                        class="ti-help-alt"></i></p>
+                                                <div class="count-number mb-8">102</div>
+                                                <div class="text-compare opacity-8">so với hôm qua.</div>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <div class="access-item">
+                                            <div class="ratio-item">
+                                                <p class="text-ratio opacity-8 mb-8">Đơn hàng <i
+                                                        class="ti-help-alt"></i></p>
+                                                <div class="count-number mb-8">20</div>
+                                                <div class="text-compare opacity-8">so với hôm qua.</div>
+                                            </div>
+
+                                            <div class="ratio-item">
+                                                <p class="text-ratio opacity-8 mb-8">Tỷ lệ chuyển đổi <i
+                                                        class="ti-help-alt"></i></p>
+                                                <div class="count-number mb-8">0,00%</div>
+                                                <div class="text-compare opacity-8">so với hôm qua.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>                   
+                    </div>
                     <!-- end home -->
 
                     <!-- tab báo cáo -->
                     <div id="report" class="tabcontent">
-                        <div class="container color-black">
+                        <div class="container color-black report-section">
                             <div class="path">
-                               <a href="" class="text-path">DANH SÁCH SẢN PHẨM</a>
+                                <a href="" class="text-path">DANH SÁCH SẢN PHẨM</a>
                             </div>
-                
+
                             <div class="content-section">
                                 <div class="list-btn">
                                     <button class="btn-item">
@@ -205,83 +268,150 @@
                                     <button class="btn-item">
                                         <i class="ti-trash"></i>
                                         Xóa tất cả</button>
-                                </div>   
-                                
-                                <label for="">Danh mục sản phẩm</label>
-                                <table>
-                                    <tr style=" background-color: #ddd;">
-                                        <td><input type="checkbox"></td>
-                                        <td>Mã sản phẩm</td>
-                                        <td>Tên sản phẩm</td>
-                                        <td>Ảnh </td>
-                                        <td>Số lượng </td>
-                                        <td>Tình trạng</td>
-                                        <td>Giá tiền </td>
-                                        <td>Danh mục</td>
-                                        <td>Chức năng</td>
-                                    </tr>
+                                </div>
 
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Mã sản phẩm</td>
-                                        <td>Tên sản phẩm</td>
-                                        <td>Ảnh </td>
-                                        <td>Số lượng </td>
-                                        <td>Tình trạng</td>
-                                        <td>Giá tiền </td>
-                                        <td>Danh mục</td>
-                                        <td>Chức năng</td>
-                                    </tr>
+                                <div class="lable-item">
+                                    <label for="">Danh mục sản phẩm</label>
+                                    <label for="search">Tìm kiếm
+                                        <input type="text" id="search">
+                                    </label>
+                                </div>
+                                <div class="list-product">
+                                    <table>
+                                        <tr style=" background-color: #ddd;">
+                                            <td><input type="checkbox"></td>
+                                            <td>Mã sản phẩm</td>
+                                            <td>Tên sản phẩm</td>
+                                            <td>Ảnh </td>
+                                            <td>Số lượng </td>
+                                            <td>Tình trạng</td>
+                                            <td>Giá tiền </td>
+                                            <td>Danh mục</td>
+                                            <td>Chức năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>01</td>
+                                            <td>CLOWNZ GOOD VIBE T-SHIRT</td>
+                                            <td><img src="../css/img/product_card/card_all/card2.png" alt=""
+                                                    width="60px" height="60px"></td>
+                                            <td>60 </td>
+                                            <td>Còn hàng</td>
+                                            <td>349.000đ </td>
+                                            <td>Áo</td>
+                                            <td>
+                                                <button><i class="ti-trash"></i></button>
+                                                <button><i class="ti-pencil-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>02</td>
+                                            <td>READY FOR BAD TRIP T-SHIRT</td>
+                                            <td><img src="../css/img/product_card/card_all/card1.png" alt=""
+                                                    width="60px" height="60px"></td>
+                                            <td>50 </td>
+                                            <td>Còn hàng</td>
+                                            <td>349.000đ </td>
+                                            <td>Áo</td>
+                                            <td>
+                                                <button><i class="ti-trash"></i></button>
+                                                <button><i class="ti-pencil-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>03</td>
+                                            <td>CLOWNZ LEOPARD SHIRT</td>
+                                            <td><img src="../css/img/product_card/card_all/card3.png" alt=""
+                                                    width="60px" height="60px"></td>
+                                            <td>40 </td>
+                                            <td>Còn hàng</td>
+                                            <td>399.000đ </td>
+                                            <td>Áo</td>
+                                            <td>
+                                                <button><i class="ti-trash"></i></button>
+                                                <button><i class="ti-pencil-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>04</td>
+                                            <td>CLOWNZ LEOPARD PANTS</td>
+                                            <td><img src="../css/img/product_card/card_all/card4.png" alt=""
+                                                    width="60px" height="60px"></td>
+                                            <td>55 </td>
+                                            <td>Còn hàng</td>
+                                            <td>349.000đ </td>
+                                            <td>Quần</td>
+                                            <td>
+                                                <button><i class="ti-trash"></i></button>
+                                                <button><i class="ti-pencil-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>05</td>
+                                            <td>Z-BOT APOCALYPSE T-SHIRT</td>
+                                            <td><img src="../css/img/product_card/card_all/card5.png" alt=""
+                                                    width="60px" height="60px"></td>
+                                            <td>62 </td>
+                                            <td>Còn hàng</td>
+                                            <td>349.000đ </td>
+                                            <td>Áo</td>
+                                            <td>
+                                                <button><i class="ti-trash"></i></button>
+                                                <button><i class="ti-pencil-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>07</td>
+                                            <td>ClownZ C Letter Cap</td>
+                                            <td><img src="../css/img/product_card/card_bag-hat/card_hat-bag4.png" alt=""
+                                                    width="60px" height="60px"></td>
+                                            <td>80 </td>
+                                            <td>Còn hàng</td>
+                                            <td>299.000đ </td>
+                                            <td>Mũ</td>
+                                            <td>
+                                                <button><i class="ti-trash"></i></button>
+                                                <button><i class="ti-pencil-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>08</td>
+                                            <td>LAUGH NOW WORLDZ BACKPACK</td>
+                                            <td><img src="../css/img/product_card/card_bag-hat/card_hat-bag1.png" alt=""
+                                                    width="60px" height="60px"></td>
+                                            <td>49 </td>
+                                            <td>Còn hàng</td>
+                                            <td>549.000đ </td>
+                                            <td>Balo</td>
+                                            <td>
+                                                <button><i class="ti-trash"></i></button>
+                                                <button><i class="ti-pencil-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>09</td>
+                                            <td>CLOWNZ RACING FLAMES WIND PANTS</td>
+                                            <td><img src="../css/img/product_card/card_bottom/card_bottom5.png" alt=""
+                                                    width="60px" height="60px"></td>
+                                            <td>49 </td>
+                                            <td>Còn hàng</td>
+                                            <td>399.000đ </td>
+                                            <td>Quần</td>
+                                            <td>
+                                                <button><i class="ti-trash"></i></button>
+                                                <button><i class="ti-pencil-alt"></i></button>
+                                            </td>
+                                        </tr>
 
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Mã sản phẩm</td>
-                                        <td>Tên sản phẩm</td>
-                                        <td>Ảnh </td>
-                                        <td>Số lượng </td>
-                                        <td>Tình trạng</td>
-                                        <td>Giá tiền </td>
-                                        <td>Danh mục</td>
-                                        <td>Chức năng</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Mã sản phẩm</td>
-                                        <td>Tên sản phẩm</td>
-                                        <td>Ảnh </td>
-                                        <td>Số lượng </td>
-                                        <td>Tình trạng</td>
-                                        <td>Giá tiền </td>
-                                        <td>Danh mục</td>
-                                        <td>Chức năng</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Mã sản phẩm</td>
-                                        <td>Tên sản phẩm</td>
-                                        <td>Ảnh </td>
-                                        <td>Số lượng </td>
-                                        <td>Tình trạng</td>
-                                        <td>Giá tiền </td>
-                                        <td>Danh mục</td>
-                                        <td>Chức năng</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Mã sản phẩm</td>
-                                        <td>Tên sản phẩm</td>
-                                        <td>Ảnh </td>
-                                        <td>Số lượng </td>
-                                        <td>Tình trạng</td>
-                                        <td>Giá tiền </td>
-                                        <td>Danh mục</td>
-                                        <td>Chức năng</td>
-                                    </tr>
-                                    
-                                </table>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -293,42 +423,57 @@
                             <div class="content-section">
                                 <h1 class="heading-account color-black ">Thông tin quản trị viên</h1>
                                 <div class="avatar-item">
-                                    <img src="./css/img/admin/ảnh thẻ.jpg" alt="avatar" class="avatar-account">
-                                    <h3 class="name color-black">Vũ Chí Thành</h3>
+                                    <img src="../css/img/admin/ảnh thẻ.jpg" alt="avatar" class="avatar-account">
+                                    <h3 class="name color-black">Vũ Tuấn Dũng</h3>
+                                    <label for="">Chức vụ: </label>Quản trị viên<br>
+                                    <label for="">Ngày sinh: </label>13/02/2002<br>
+                                    <label for="">Quê quán: </label>Hà Nội
                                 </div>
 
-                                <div class="account-item ">
-                                    <div class="text-heading">
-                                        <i class="ti-bookmark-alt"></i>
-                                        <h3>Thông tin chủ tài khoản</h3>
+                                <div class="list-form-account">
+                                    <div class="form-account">
+                                        <div class="account-item ">
+                                            <i class="ti-user"></i>
+                                            <div class="header-item"><strong>Thông tin tài khoản</strong></div>
+                                            <p>Quản lý thông tin đăng nhập và thông tin cá nhân</p>
+                                        </div>
+
+                                        <div class="account-item ">
+                                            <i class="ti-key"></i>
+                                            <div class="header-item"><strong>Đổi mật khẩu</strong></div>
+                                            <p>Thay đổi mật khẩu.</p>
+                                        </div>
                                     </div>
 
-                                    <label for="">Email hiện tại:</label>****@gmail.com <br>
-                                    <label for="">Mật khẩu hiện tại:</label> ********* <i class="ti-eye" title="Hiển thị mật khẩu"></i>
-                                </div>
-                                <br>
-                                <div class="account-item ">
-                                    <div class="text-heading">
-                                        <i class="ti-comments"></i>
-                                        <h3>Nhật ký hoạt động</h3>
+                                    <div class="form-account">
+                                        <div class="account-item ">
+                                            <i class="ti-lock"></i>
+                                            <div class="header-item"><strong>Bảo mật</strong></div>
+                                            <p>Bảo vệ thông tin cá nhân và tài khoản của bạn.</p>
+                                        </div>
+
+                                        <div class="account-item ">
+                                            <i class="ti-settings"></i>
+                                            <div class="header-item"><strong>Cài đặt</strong></div>
+                                            <p>Chỉnh sửa và cài đặt thiết bị. </p>
+                                        </div>
                                     </div>
 
-                                    <label for="">Bạn đã thêm một sản phẩm 15 phút trước</label> <br>
-                                    <label for="">Bạn đã xóa một sản phẩm 20 phút trước</label> <br>
-                                    <label for="">Bạn đã thêm một sản phẩm 24 phút trước</label> <br>
-                                    <label for="">Bạn đã sửa một sản phẩm 27 phút trước</label> <br>
-                                    <label for="">Bạn đã thêm một sản phẩm 30 phút trước</label> <br>
-                                </div>
-                                <br>
-                                <div class="account-item ">
-                                    <div class="text-heading">
-                                        <i class="ti-bookmark-alt"></i>
-                                        <h3>Thông tin chủ tài khoản</h3>
-                                    </div>
+                                    <div class="form-account">
+                                        <div class="account-item ">
+                                            <i class="ti-help"></i>
+                                            <div class="header-item"><strong>Trợ giúp và hỗ trợ</strong></div>
+                                            <p>Liên hệ và cảnh báo nếu gặp trục trặc.</p>
+                                        </div>
 
-                                    <label for="">Email hiện tại:</label>****@gmail.com <br>
-                                    <label for="">Mật khẩu hiện tại:</label> ********* <i class="ti-eye" title="Hiển thị mật khẩu"></i>
+                                        <div class="account-item ">
+                                            <i class="ti-package"></i>
+                                            <div class="header-item"><strong>Quyền riêng tư</strong></div>
+                                            <p>Chỉnh sửa các quyền hạn cá nhân của quản trị viên</p>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -338,76 +483,76 @@
                     <div id="management" class="tabcontent">
                         <div class="container color-black">
                             <div class="path">
-                               <a href="" class="text-path">Danh sách nhân viên/ Thêm nhân viên</a>
+                                <a href="" class="text-path">Danh sách nhân viên/ Thêm nhân viên</a>
                             </div>
-                
+
                             <div class="content-section">
                                 <h3 class="heading-content color-black">Tạo mới sản phẩm</h3>
-                                
+
                                 <div class="create-btn">
                                     <button class="btn-item-sub">
                                         <i class="ti-folder"></i>
                                         thêm nhà cung cấp
                                     </button>
-                
+
                                     <button class="btn-item-sub">
                                         <i class="ti-folder"></i>
                                         Thêm danh mục
                                     </button>
-                
+
                                     <button class="btn-item-sub">
                                         <i class="ti-folder"></i>
                                         Thêm tình trạng
                                     </button>
                                 </div>
                                 <div class="form__input">
-                
+
                                     <div class="row">
                                         <div class="input-item">
-                                            <div class="text-input">Mã sản phẩm</div>
-                                            <input type="text" class="region-input">
+                                            <label for="id-product" class="text-input">Mã sản phẩm</label>
+                                            <input type="text" class="region-input" id="id-product">
                                         </div>
-                    
+
                                         <div class="input-item">
-                                            <div class="text-input">Tên sản phẩm</div>
-                                            <input type="text" class="region-input">
+                                            <label for="name-product" class="text-input">Tên sản phẩm</label>
+                                            <input type="text" class="region-input" id="name-product">
                                         </div>
-                    
+
                                         <div class="input-item">
-                                            <div class="text-input">Số lượng</div>
-                                            <input type="number" class="region-input">
+                                            <label for="amount" class="text-input">Số lượng</label>
+                                            <input type="number" class="region-input" id="amount">
                                         </div>
-                    
+
                                         <div class="input-item">
-                                            <div class="text-input">Tình trạng</div>
-                                            <input type="text" class="region-input">
+                                            <label for="status" class="text-input">Tình trạng</label>
+                                            <input type="text" class="region-input" id="status">
                                         </div>
                                     </div>
-                
+
                                     <div class="row">
                                         <div class="input-item">
-                                            <div class="text-input">Danh mục</div>
-                                            <input type="text" class="region-input">
+                                            <label for="index" class="text-input">Danh mục</label>
+                                            <input type="text" class="region-input" id="index">
                                         </div>
-                    
+
                                         <div class="input-item">
-                                            <div class="text-input">Nhà cung cấp</div>
-                                            <input type="text" class="region-input">
+                                            <label for="madein" class="text-input">Nhà cung cấp</label>
+                                            <input type="text" class="region-input" id="madein">
                                         </div>
-                    
+
                                         <div class="input-item">
-                                            <div class="text-input">Giá bán</div>
-                                            <input type="number" class="region-input">
+                                            <label for="price" class="text-input">Giá bán</label>
+                                            <input type="number" class="region-input" id="price">
                                         </div>
-                    
+
                                         <div class="input-item">
-                                            <div class="text-input">Giá vốn</div>
-                                            <input type="number" class="region-input">
+                                            <label for="capital" class="text-input">Giá vốn</label>
+                                            <input type="number" class="region-input" id="capital">
                                         </div>
                                     </div>
-                                                       
+
                                 </div>
-                
+
                                 <div class="select-img">
                                     <div class="text-input">Ảnh sản phẩm</div>
                                     <button class="up-img-btn">
@@ -415,51 +560,27 @@
                                         Chọn ảnh
                                     </button>
                                 </div>
-                
+
                                 <div class="describe_form">
-                                    <div class="text-input">Mô tả sản phẩm</div>
+                                    <label for="describe" class="text-input">Mô tả sản phẩm</label>
                                     <!-- <input type="text" class="describe-input"> -->
-                                    <textarea class="describe-input" name="" id="" cols="30" rows="10"></textarea>
+                                    <textarea class="describe-input" name="" id="describe" cols="30"
+                                        rows="10"></textarea>
                                 </div>
-                                
+
                                 <div class="select_end_btn">
                                     <button class="save-btn">Lưu lại</button>
                                     <button class="cancel-btn">Hủy bỏ</button>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
                     <!-- end manager -->
                 </div>
-                
-                <!-- <li class="sub-nav"><a href="" class="sub-nav-link" >
-                    <i class="ti-home mr-10"></i>
-                    Home
-                </a></li>
 
-                <li class="sub-nav"><a href="" class="sub-nav-link" >
-                    <i class="ti-bar-chart-alt mr-10"></i>
-                    Báo cáo
-                </a></li>
 
-                <li class="sub-nav"><a href="" class="sub-nav-link" >
-                    <i class="ti-user mr-10"></i>
-                    Tài khoản
-                </a></li>
-
-                <li class="sub-nav">
-                    <a href="" class="sub-nav-link" >
-                    <i class="ti-pencil-alt mr-10"></i>
-                    Quản lý sản phẩm
-                    <i class="ti-angle-down"></i>
-                    </a>
-                    <ul class="sub-product">
-                        <li><a href="#">Thêm sản phẩm mới</a></li>
-                        <li><a href="#">Danh sách sản phẩm</a></li>
-                    </ul>
-                </li> -->
-            </ul>
+            </div>
         </div>
 
         <!-- btn đăng suất -->
@@ -470,23 +591,24 @@
 
     <script>
         function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
-        
+
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
-        </script>
+    </script>
 
-        
+
 </body>
+
 </html>
