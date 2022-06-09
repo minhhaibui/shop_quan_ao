@@ -6,33 +6,49 @@
     --color_icon: #65bbf2;
     --color_border: #702f61;
   }
+
+  body{
+    background-image: url(./icon/avatar.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 70%;
+  }
   .container {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to left, var(--color1), var(--color2));
+    background-image:url(https://beecost.vn/ao-so-mi-nam-ngan-tay-clownz-headshot-p.1__6242359740__144509299);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 20%;
     position: relative;
   }
   .form_login {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    height: 80%;
+    width: 30%;
+    height: 70%;
     position: absolute;
-    left: 50%;
+    left: 78%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--color3);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: transparent;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+    border: 2px solid #000;
+    border-radius: 22px;
+    /* background-image: url(./icon/favicon.png) ; */
+    background-position: bottom;
+    background-repeat: no-repeat; 
+    background-size: 50%; 
   }
   .form_login-header {
-    margin: 5rem 0;
+    margin: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .form_login-text {
     font-size: 4rem;
-    color: white;
+    color: #000;
   
     display: inline-block;
     max-width: 180px;
@@ -49,12 +65,7 @@
     justify-content: center;
     align-items: center;
   }
-  .icon-twitter {
-    /* padding-left: 5px; */
-    margin-right: 2rem;
-    margin-left: -7px;
-    background: var(--color3);
-  }
+  
   .icon-facebook {
     margin-left: 1rem;
   }
@@ -67,7 +78,7 @@
   }
   .login_button-email,
   .login_button-password {
-    width: 250px;
+    width: 80%;
     height: 35px;
     border: 2px solid var(--color_border);
     border-radius: 5px;
@@ -82,8 +93,7 @@
     color: var(--color_border);
     margin-bottom: 38px;
   }
-  .login_button-login,
-  .login_button-create {
+  .login_button-login {
     width: 284px;
     height: 43px;
     border-radius: 5px;
@@ -98,11 +108,7 @@
     width: 100%;
     margin-bottom: 4rem;
   }
-  .login_button-create {
-    background-color: #ffce00;
-  }
-  .login_button-login:hover,
-  .login_button-create:hover {
+  .login_button-login:hover {
     cursor: pointer;
     opacity: 0.8;
   }
