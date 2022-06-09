@@ -152,10 +152,12 @@ body {
 }
 
 .dropdown_item {
+  display: flex;
   padding: 10px 5px;
   width: 230px;
 }
 .dropdown_item > a {
+  flex: 1;
   color: var(--light-black);
   font-size: 14px;
   letter-spacing: 0.25px;
