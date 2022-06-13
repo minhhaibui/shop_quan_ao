@@ -42,6 +42,8 @@ body {
 
 .main{
     position: relative;
+    margin-top: 50px;
+    height: 100vh;
 }
 
 .container{
@@ -79,7 +81,7 @@ body {
   border-radius: 5px;
   padding: 12px;
   box-shadow: 5px 10px rgb(147, 138, 138);
-  height: 100%;
+  height: 100vh;
 }
 
 .heading-content {
@@ -125,6 +127,8 @@ body {
 .input-item {
   width: 25%;
   margin: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .region-input {
@@ -213,7 +217,7 @@ body {
 
 .avatar-img {
   margin-left: 50px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .sub-text {
@@ -307,6 +311,7 @@ body {
     top:20px;
     right: 20px;
     border-radius: 20px 0 0 20px;
+    /* position: absolute; */
 } 
 
 .sign-out-btn:hover {
@@ -406,7 +411,7 @@ body {
 }
 
 .avatar-item{
-    position: fixed;
+    position: absolute;
 }
 
 .list-btn {
@@ -444,7 +449,7 @@ table{
 }
 
 .list-product{
-    height: 500px;
+    height: 500;
     overflow: auto;
 }
 

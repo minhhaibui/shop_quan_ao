@@ -839,9 +839,12 @@ img {
 .list-payment {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .item-payment {
+  margin-right: 5px;
+  margin-left: 5px
 }
 
 .sapo-footer {
