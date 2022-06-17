@@ -49,6 +49,9 @@
         <div class="container">
           <!-- start header_top -->
           <div class="header_top">
+            <div id="toggle">
+              <i class="ti-menu"></i>
+            </div>
             <div class="text">
               <span class="hotline">HOTLINE ĐẶT HÀNG :</span>
               <a href="" class="number-phone">098 167 2709 </a>
@@ -74,19 +77,23 @@
           <div class="header_bottom">
             <ul class="nav">
               <li class="nav-item">
-                <a href="./Z_BOT CAPSULE/z_bot.html">Z-BOT CAPSULE </a>
+                <div class="nav_item-title">
+                  <a href="./Z_BOT CAPSULE/z_bot.html">Z-BOT CAPSULE </a>
+                </div>
               </li>
               <li class="nav-item">
-                <a href="./YOUNG WILD N' TRIPPY/young.html"
-                  >YOUNG/WILDN'TRIPPY
-                </a>
+                <div class="nav_item-title">
+                  <a href="./YOUNG WILD N' TRIPPY/young.html"
+                    >YOUNG/WILDN'TRIPPY
+                  </a>
+                </div>
               </li>
-              <li class="nav-item">
-                <a href="./TOP/TOP.html"
-                  >TOP
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown">
+              <li class="nav-item nav-item_has-children">
+                <div class="nav_item-title">
+                  <a href="./TOP/TOP.html">TOP </a>
+                  <i id="icon_top" class="fa-solid fa-angle-down nav_icon"></i>
+                </div>
+                <ul id="dropdown-top" class="dropdown">
                   <li class="dropdown_item">
                     <a href="./TOP/TOP.html">T-Shirt</a>
                   </li>
@@ -104,26 +111,43 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href=""
-                  >BOTTOM
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown">
-                  <li class="dropdown_item"><a href="">pants</a></li>
-                  <li class="dropdown_item"><a href="">jean & denin</a></li>
+              <li class="nav-item nav-item_has-children">
+                <div class="nav_item-title">
+                  <a href="./Bottom/Bottom.html">BOTTOM </a>
+                  <i
+                    id="icon_bottom"
+                    class="fa-solid fa-angle-down nav_icon"
+                  ></i>
+                </div>
+                <ul id="dropdown-bottom" class="dropdown">
+                  <li class="dropdown_item">
+                    <a href="./Bottom/Pants/Pants.html">pants</a>
+                  </li>
+                  <li class="dropdown_item">
+                    <a href="./Bottom/Jean_Denin/Jean_Denin.html"
+                      >jean & denin</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href=""
-                  >ACCESSORY
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown">
-                  <li class="dropdown_item"><a href="">bag</a></li>
-                  <li class="dropdown_item"><a href="">hat</a></li>
-                  <li class="dropdown_item"><a href="">backpack</a></li>
-                  <li class="dropdown_item"><a href="">others</a></li>
+              <li class="nav-item nav-item_has-children">
+                <div class="nav_item-title">
+                  <a href="./Accessories/Accessories.html">ACCESSORY </a>
+                  <i
+                    id="icon_accessory"
+                    class="fa-solid fa-angle-down nav_icon"
+                  ></i>
+                </div>
+                <ul id="dropdown-accessory" class="dropdown">
+                  <li class="dropdown_item">
+                    <a href="./Accessories/Bag/Bag.html">bag</a>
+                  </li>
+                  <li class="dropdown_item">
+                    <a href="./Accessories/Hat/Hat.html">hat</a>
+                  </li>
+                  <li class="dropdown_item">
+                    <a href="./Accessories/BackPack/BackPack.html">backpack</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -182,146 +206,148 @@
         <div class="content_container">
           <!-- start section -->
           <div class="section">
-            <div class="section_card">
+            <div class="section_card section_card-NEWARRIVAL">
               <!-- start section_title -->
               <div class="section_title">
-                <h2 class="section_title-top">NEW ARRIVAL</h2>
-                <p class="section_title-bottom">
-                  TOP <span>/</span>BOTTOM <span>/</span>ACCESSORY
-                </p>
-              </div>
-              <!-- end section_title -->
-              <!-- start section_product -->
-              <div class="new-arrival">
-                <!-- <i class="ti-arrow-circle-right icon_card-right icon_next"></i>
-                <i class="ti-arrow-circle-left icon_card-left icon_next"></i> -->
-                <div class="section_product">
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front">
-                          <img
-                            src="./css/img/product_card/card_all/card1.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_all/card1_hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <a href="#" class="btn_detail">Chi tiết</a>
-                  </div>
-
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front">
-                          <img
-                            src="./css/img/product_card/card_all/card2.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_all/card2_hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <a href="#" class="btn_detail">Chi tiết</a>
-                  </div>
-
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front">
-                          <img
-                            src="./css/img/product_card/card_all/card3.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_all/card3_hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <div class="btn_detail">Chi tiết</div>
-                  </div>
-
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front">
-                          <img
-                            src="./css/img/product_card/card_all/card4.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_all/card4_hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <a href="#" class="btn_detail">Chi tiết</a>
-                  </div>
-
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front">
-                          <img
-                            src="./css/img/product_card/card_all/card5.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_all/card5_hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <a href="#" class="btn_detail">Chi tiết</a>
-                  </div>
+                <a class="section_title-top" href="">NEW ARRIVAL</a>
+                <div class="section_title-bottom">
+                  <a href="./TOP/TOP.html">TOP</a>
+                  <span>/</span>
+                  <a href="./Bottom/Bottom.html">BOTTOM</a>
+                  <span>/</span>
+                  <a href="./Accessories/Accessories.html">ACCESSORY</a>
                 </div>
               </div>
+              <!-- end section_title -->
+
+              <!-- start section_product -->
+              <div class="section_product">
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_all/card1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_all/card1_hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_all/card2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_all/card2_hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_all/card3.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_all/card3_hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <div class="btn_detail">Chi tiết</div>
+                </div>
+
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_all/card4.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_all/card4_hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_all/card5.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_all/card5_hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+              </div>
+
               <!-- end section_product -->
 
               <!-- start section btn -->
@@ -348,7 +374,10 @@
                   </div>
                   <div class="section_banner-content">
                     <h2 class="section_banner-title">Top</h2>
-                    <a class="section_banner-btn" href="#" title="xem thêm"
+                    <a
+                      class="section_banner-btn"
+                      href="./TOP/TOP.html"
+                      title="xem thêm"
                       >xem thêm</a
                     >
                   </div>
@@ -362,8 +391,11 @@
                     />
                   </div>
                   <div class="section_banner-content">
-                    <h2 class="section_banner-title">Top</h2>
-                    <a class="section_banner-btn" href="#" title="xem thêm"
+                    <h2 class="section_banner-title">Bottom</h2>
+                    <a
+                      class="section_banner-btn"
+                      href="./Bottom/Bottom.html"
+                      title="xem thêm"
                       >xem thêm</a
                     >
                   </div>
@@ -377,8 +409,11 @@
                     />
                   </div>
                   <div class="section_banner-content">
-                    <h2 class="section_banner-title">Top</h2>
-                    <a class="section_banner-btn" href="#" title="xem thêm"
+                    <h2 class="section_banner-title">ACCESSORY</h2>
+                    <a
+                      class="section_banner-btn"
+                      href="./Accessories/Accessories.html"
+                      title="xem thêm"
                       >xem thêm</a
                     >
                   </div>
@@ -388,194 +423,219 @@
             <!-- end banner -->
 
             <!-- card_top -->
-            <div class="section_card">
+            <div class="section_card section_card-top">
               <!-- start section_title -->
               <div class="section_title">
-                <h2 class="section_title-top">TOP</h2>
+                <a class="section_title-top" href="./TOP/TOP.html">TOP</a>
                 <div class="section_title-bottom">
-                  <a href="">T-Shirt</a>
+                  <a href="./TOP/TOP.html">T-Shirt</a>
                   <span>/</span>
-                  <a href=""> Shirt</a>
+                  <a href="./TOP/Shirt/Shirt.html"> Shirt</a>
                   <span>/</span>
-                  <a href=""> Hoodie</a>
+                  <a href="./TOP/Hoodei/Hoodei.html"> Hoodie</a>
                   <span>/</span>
-                  <a href=""> Jacket</a>
+                  <a href="./TOP/Jacket/Jacket.html"> Jacket</a>
                   <span>/</span>
-                  <a href="">Sweatshirt</a>
-                </div>
-              </div>
-              <!-- end section_title -->
-
-              <!-- start section_product  -->
-              <div class="Top">
-                <!-- <i class="ti-arrow-circle-right icon_card-right icon_next"></i>
-                <i class="ti-arrow-circle-left icon_card-left icon_next"></i> -->
-                <div class="section_product">
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front best_seller">
-                          <img
-                            src="./css/img/product_card/card_top/card_top1.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_top/card_top1-hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <a href="#" class="btn_detail">Chi tiết</a>
-                  </div>
-
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front">
-                          <img
-                            src="./css/img/product_card/card_top/card_top2.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_top/card_top2-hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <a href="#" class="btn_detail">Chi tiết</a>
-                  </div>
-
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front">
-                          <img
-                            src="./css/img/product_card/card_top/card_top3.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_top/card_top3-hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <a href="#" class="btn_detail">Chi tiết</a>
-                  </div>
-
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front">
-                          <img
-                            src="./css/img/product_card/card_top/card_top4.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_top/card_top4-hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <a href="#" class="btn_detail">Chi tiết</a>
-                  </div>
-
-                  <div class="section_product-card">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="front">
-                          <img
-                            src="./css/img/product_card/card_top/card_top5.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="back">
-                          <img
-                            src="./css/img/product_card/card_top/card_top5-hover.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product_card-content">
-                      <div class="product_card-series">TEES&POLO SHIRTS</div>
-                      <div class="product_card-title">BIG KARMAT-SHIRT</div>
-                      <div class="product_card-price">399.000d</div>
-                    </div>
-                    <a href="#" class="btn_detail">Chi tiết</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end section_product -->
-            <!-- start section btn -->
-            <div class="section_btn">
-              <a class="section_btn-link" title="XEM TẤT CẢ .TOP " href="#"
-                >XEM TẤT CẢ .TOP
-              </a>
-            </div>
-            <!-- end section btn -->
-
-            <!-- end card_top -->
-
-            <!-- card _bottom -->
-            <div class="section_card">
-              <!-- start section_title -->
-              <div class="section_title">
-                <h2 class="section_title-top">BOTTOM</h2>
-                <div class="section_title-bottom">
-                  <a href="">Pants </a>
-                  <span>/</span>
-                  <a href=""> Jeans & Denim</a>
+                  <a href="./TOP/Sweatshirt/Sweatshirt.html">Sweatshirt</a>
                 </div>
               </div>
               <!-- end section_title -->
 
               <!-- start section_product  -->
               <div class="section_product">
-                <!-- <i class="ti-arrow-circle-right icon_card-right icon_next"></i>
-                <i class="ti-arrow-circle-left icon_card-left icon_next"></i> -->
                 <div class="section_product-card">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="front hot">
+                      <div class="front best_seller">
+                        <img
+                          src="./css/img/product_card/card_top/card_top1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_top/card_top1-hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_top/card_top2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_top/card_top2-hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_top/card_top3.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_top/card_top3-hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_top/card_top4.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_top/card_top4-hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_top/card_top5.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_top/card_top5-hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+              </div>
+              <!-- start section btn -->
+              <div class="section_btn">
+                <a
+                  class="section_btn-link"
+                  title="XEM TẤT CẢ .TOP "
+                  href="./TOP/TOP.html"
+                  >XEM TẤT CẢ .TOP
+                </a>
+              </div>
+              <!-- end section btn -->
+            </div>
+
+            <!-- end card_top -->
+
+            <!-- card _bottom -->
+            <div class="section_card section_card-bottom">
+              <!-- start section_title -->
+              <div class="section_title">
+                <a class="section_title-top" href="./Bottom/Bottom.html"
+                  >BOTTOM</a
+                >
+
+                <div class="section_title-bottom">
+                  <a href="./Bottom/Pants/Pants.html">Pants </a>
+                  <span>/</span>
+                  <a href="./Bottom/Jean_Denin/Jeam_Denin.css">
+                    Jeans & Denim</a
+                  >
+                </div>
+              </div>
+              <!-- end section_title -->
+              <!-- start section_product  -->
+              <div class="section_product">
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <img
+                          src="./css/img/product_card/card_bottom/card_bottom5.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="back">
+                        <img
+                          src="./css/img/product_card/card_bottom/card_bottom5-hover.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_card-content">
+                    <div class="product_card-series">TEES&POLO SHIRTS</div>
+                    <div class="product_card-title">BIG KARMAT-SHIRT</div>
+                    <div class="product_card-price">399.000d</div>
+                  </div>
+                  <a href="#" class="btn_detail">Chi tiết</a>
+                </div>
+
+                <div class="section_product-card">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
                         <img
                           src="./css/img/product_card/card_bottom/card_bottom1.png"
                           alt=""
                         />
                       </div>
-                      <div class="back hot">
+                      <div class="back">
                         <img
                           src="./css/img/product_card/card_bottom/card_bottom1-hover.png"
                           alt=""
@@ -594,13 +654,13 @@
                 <div class="section_product-card">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="front best_seller">
+                      <div class="front">
                         <img
                           src="./css/img/product_card/card_bottom/card_bottom2.png"
                           alt=""
                         />
                       </div>
-                      <div class="back best_seller">
+                      <div class="back">
                         <img
                           src="./css/img/product_card/card_bottom/card_bottom2-hover.png"
                           alt=""
@@ -608,24 +668,25 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="product_card-content">
                     <div class="product_card-series">TEES&POLO SHIRTS</div>
                     <div class="product_card-title">BIG KARMAT-SHIRT</div>
                     <div class="product_card-price">399.000d</div>
                   </div>
-                  <a href="#" class="btn_detail">Chi tiết</a>
+                  <div class="btn_detail">Chi tiết</div>
                 </div>
 
                 <div class="section_product-card">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="front best_seller">
+                      <div class="front">
                         <img
                           src="./css/img/product_card/card_bottom/card_bottom3.png"
                           alt=""
                         />
                       </div>
-                      <div class="back best_seller">
+                      <div class="back">
                         <img
                           src="./css/img/product_card/card_bottom/card_bottom3-hover.png"
                           alt=""
@@ -665,19 +726,18 @@
                   </div>
                   <a href="#" class="btn_detail">Chi tiết</a>
                 </div>
-
                 <div class="section_product-card">
                   <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="front">
                         <img
-                          src="./css/img/product_card/card_bottom/card_bottom5.png"
+                          src="./css/img/product_card/card_bottom/card_bottom6.png"
                           alt=""
                         />
                       </div>
                       <div class="back">
                         <img
-                          src="./css/img/product_card/card_bottom/card_bottom5-hover.png"
+                          src="./css/img/product_card/card_bottom//card_bottom6-hover.png"
                           alt=""
                         />
                       </div>
@@ -692,29 +752,34 @@
                 </div>
               </div>
               <!-- end section_product -->
+              <!-- start section btn -->
+              <div class="section_btn">
+                <a
+                  class="section_btn-link"
+                  title="XEM TẤT CẢ .BOTTOM "
+                  href="./Bottom/Bottom.html"
+                  >XEM TẤT CẢ .BOTTOM
+                </a>
+              </div>
+              <!-- end section btn -->
             </div>
-            <!-- start section btn -->
-            <div class="section_btn">
-              <a class="section_btn-link" title="XEM TẤT CẢ .BOTTOM " href="#"
-                >XEM TẤT CẢ .BOTTOM
-              </a>
-            </div>
-            <!-- end section btn -->
             <!-- end card bottom -->
 
             <!-- card bag && hat -->
             <div class="section_card section_card-bag-hat">
               <!-- start section_title -->
               <div class="section_title">
-                <h2 class="section_title-top">ACCESSORIES</h2>
+                <a
+                  class="section_title-top"
+                  href="./Accessories/Accessories.html"
+                  >ACCESSORIES</a
+                >
                 <div class="section_title-bottom">
-                  <a href="">Bag </a>
+                  <a href="./Accessories/Bag/Bag.html">Bag </a>
                   <span>/</span>
-                  <a href=""> Hat</a>
+                  <a href="./Accessories/Hat/Hat.html"> Hat</a>
                   <span>/</span>
-                  <a href="">Backpack</a>
-                  <span>/</span>
-                  <a href="">Others</a>
+                  <a href="./Accessories/BackPack/BackPack.html">Backpack</a>
                 </div>
               </div>
               <!-- end section_title -->
@@ -853,7 +918,7 @@
                 <a
                   class="section_btn-link"
                   title="XEM TẤT CẢ .ACCESSORIES "
-                  href="#"
+                  href="./Accessories/Accessories.html"
                   >XEM TẤT CẢ .ACCESSORIES
                 </a>
               </div>
@@ -865,12 +930,13 @@
               <div class="section_blog-container">
                 <h2 class="section_blog-title">CLOWNZ NEW COLLECTION</h2>
                 <div class="section_blog-list">
-                  <a href="#" class="section_blog-item">
-                    <img
-                      src="./css/img/product_card/card_blogs/swagger.png"
-                      alt=""
-                      class="section_blog-image"
-                    />
+                  <a href="#" class="section_blog-item blog-1">
+                    <div class="section_blog-image">
+                      <img
+                        src="./css/img/product_card/card_blogs/swagger.png"
+                        alt=""
+                      />
+                    </div>
                     <div class="section_blog-content">
                       <h3 class="section_blog-content_info">
                         clownz x saigon swagger collaboration
@@ -881,12 +947,13 @@
                       </p>
                     </div>
                   </a>
-                  <a href="#" class="section_blog-item">
-                    <img
-                      src="./css/img/product_card/card_blogs/rap_nha_lam.png"
-                      alt=""
-                      class="section_blog-image"
-                    />
+                  <a href="#" class="section_blog-item blog-2">
+                    <div class="section_blog-image">
+                      <img
+                        src="./css/img/product_card/card_blogs/rap_nha_lam.png"
+                        alt=""
+                      />
+                    </div>
                     <div class="section_blog-content">
                       <h3 class="section_blog-content_info">
                         ClownZ x Rap Nhà Làm | Homemade Rapper Collection
@@ -897,12 +964,13 @@
                       </p>
                     </div>
                   </a>
-                  <a href="#" class="section_blog-item">
-                    <img
-                      src="./css/img/product_card/card_blogs/wowy.png"
-                      alt=""
-                      class="section_blog-image"
-                    />
+                  <a href="#" class="section_blog-item blog-3">
+                    <div class="section_blog-image">
+                      <img
+                        src="./css/img/product_card/card_blogs/wowy.png"
+                        alt=""
+                      />
+                    </div>
                     <div class="section_blog-content">
                       <h3 class="section_blog-content_info">WOWY x CLOWNZ</h3>
                       <p class="section_blog-content_text">
