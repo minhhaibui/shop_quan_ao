@@ -38,18 +38,17 @@
         <div class="container">
           <!-- start header_top -->
           <div class="header_top">
+            <div id="toggle">
+              <i class="ti-menu"></i>
+            </div>
             <div class="text">
               <span class="hotline">HOTLINE ĐẶT HÀNG :</span>
               <a href="" class="number-phone">098 167 2709 </a>
             </div>
-            <div class="header_logo">
+            <div class="logo">
               <a href="../../index.html"
-                ><img
-                  src="../../css/img/header/logo_header.webp"
-                  title="CLOWNZ STREETWEAR"
-                  alt="CLOWNZ STREETWEAR"
-                />
-              </a>
+                ><img src="../../css/img/header/logo_header.webp" alt="logo"
+              /></a>
             </div>
             <div class="cart">
               <div class="cart-left">
@@ -67,19 +66,23 @@
           <div class="header_bottom">
             <ul class="nav">
               <li class="nav-item">
-                <a href="../../Z_BOT CAPSULE/z_bot.html">Z-BOT CAPSULE </a>
+                <div class="nav_item-title">
+                  <a href="../../Z_BOT CAPSULE/z_bot.html">Z-BOT CAPSULE </a>
+                </div>
               </li>
               <li class="nav-item">
-                <a href="../../YOUNG WILD N' TRIPPY/young.html"
-                  >YOUNG/WILDN'TRIPPY
-                </a>
+                <div class="nav_item-title">
+                  <a href="../../YOUNG WILD N' TRIPPY/young.html"
+                    >YOUNG/WILDN'TRIPPY
+                  </a>
+                </div>
               </li>
-              <li class="nav-item">
-                <a href="../../TOP/TOP.html"
-                  >TOP
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown">
+              <li class="nav-item nav-item_has-children">
+                <div class="nav_item-title">
+                  <a href="../../TOP/TOP.html">TOP </a>
+                  <i id="icon_top" class="fa-solid fa-angle-down nav_icon"></i>
+                </div>
+                <ul id="dropdown-top" class="dropdown">
                   <li class="dropdown_item">
                     <a href="../../TOP/TOP.html">T-Shirt</a>
                   </li>
@@ -99,12 +102,15 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href="../../Bottom/Bottom.html"
-                  >BOTTOM
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown">
+              <li class="nav-item nav-item_has-children">
+                <div class="nav_item-title">
+                  <a href="../../Bottom/Bottom.html">BOTTOM </a>
+                  <i
+                    id="icon_bottom"
+                    class="fa-solid fa-angle-down nav_icon"
+                  ></i>
+                </div>
+                <ul id="dropdown-bottom" class="dropdown">
                   <li class="dropdown_item">
                     <a href="../../Bottom/Pants/Pants.html">pants</a>
                   </li>
@@ -115,12 +121,15 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href="../Accessories.html"
-                  >ACCESSORY
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown">
+              <li class="nav-item nav-item_has-children">
+                <div class="nav_item-title">
+                  <a href="../Accessories.html">ACCESSORY </a>
+                  <i
+                    id="icon_accessory"
+                    class="fa-solid fa-angle-down nav_icon"
+                  ></i>
+                </div>
+                <ul id="dropdown-accessory" class="dropdown">
                   <li class="dropdown_item">
                     <a href="../Bag/Bag.html">bag</a>
                   </li>
@@ -141,11 +150,6 @@
       <!-- start blog_header -->
       <div class="header_blog">
         <div class="header_blog-container">
-          <img
-            src="../img/header/header_blog.png"
-            alt=""
-            class="header_blog-image"
-          />
           <div class="header_blog-content">
             <h1 class="header_blog-title">BackPack</h1>
           </div>
@@ -418,5 +422,33 @@
       $(this).addClass("active").siblings().removeClass("active");
       return false;
     });
+    const navsile = () => {
+      const toggle = document.querySelector("#toggle");
+      const header_bottom = document.querySelector(".header_bottom");
+      const nav = document.querySelector(".nav");
+      const dropdown_top = document.querySelector("#dropdown-top");
+      const dropdown_bottom = document.querySelector("#dropdown-bottom");
+      const dropdown_accessory = document.querySelector("#dropdown-accessory");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("nav_active");
+        header_bottom.classList.toggle("header_active");
+      });
+      const dropdown_toggle_top = document.querySelector("#icon_top");
+      dropdown_toggle_top.addEventListener("click", () => {
+        dropdown_top.classList.toggle("dropdown_active");
+      });
+
+      const dropdown_toggle_bottom = document.querySelector("#icon_bottom");
+      dropdown_toggle_bottom.addEventListener("click", () => {
+        dropdown_bottom.classList.toggle("dropdown_active");
+      });
+      const dropdown_toggle_accessory =
+        document.querySelector("#icon_accessory");
+      dropdown_toggle_accessory.addEventListener("click", () => {
+        dropdown_accessory.classList.toggle("dropdown_active");
+      });
+    };
+    navsile();
   </script>
 </html>

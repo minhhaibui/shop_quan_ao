@@ -38,18 +38,17 @@
         <div class="container">
           <!-- start header_top -->
           <div class="header_top">
+            <div id="toggle">
+              <i class="ti-menu"></i>
+            </div>
             <div class="text">
               <span class="hotline">HOTLINE ĐẶT HÀNG :</span>
               <a href="" class="number-phone">098 167 2709 </a>
             </div>
-            <div class="header_logo">
+            <div class="logo">
               <a href="../index.html"
-                ><img
-                  src="../css/img/header/logo_header.webp"
-                  title="CLOWNZ STREETWEAR"
-                  alt="CLOWNZ STREETWEAR"
-                />
-              </a>
+                ><img src="../css/img/header/logo_header.webp" alt="logo"
+              /></a>
             </div>
             <div class="cart">
               <div class="cart-left">
@@ -67,19 +66,23 @@
           <div class="header_bottom">
             <ul class="nav">
               <li class="nav-item">
-                <a href="../Z_BOT CAPSULE/z_bot.html">Z-BOT CAPSULE </a>
+                <div class="nav_item-title">
+                  <a href="../Z_BOT CAPSULE/z_bot.html">Z-BOT CAPSULE </a>
+                </div>
               </li>
               <li class="nav-item">
-                <a href="../YOUNG WILD N' TRIPPY/young.html"
-                  >YOUNG/WILDN'TRIPPY
-                </a>
+                <div class="nav_item-title">
+                  <a href="../YOUNG WILD N' TRIPPY/young.html"
+                    >YOUNG/WILDN'TRIPPY
+                  </a>
+                </div>
               </li>
-              <li class="nav-item">
-                <a href=""
-                  >TOP
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown">
+              <li class="nav-item nav-item_has-children">
+                <div class="nav_item-title">
+                  <a href="../TOP/TOP.html">TOP </a>
+                  <i id="icon_top" class="fa-solid fa-angle-down nav_icon"></i>
+                </div>
+                <ul id="dropdown-top" class="dropdown">
                   <li class="dropdown_item">
                     <a href="../TOP/TOP.html">T-Shirt</a>
                   </li>
@@ -97,26 +100,34 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href=""
-                  >BOTTOM
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown">
+              <li class="nav-item nav-item_has-children">
+                <div class="nav_item-title">
+                  <a href="../Bottom/Bottom.html">BOTTOM </a>
+                  <i
+                    id="icon_bottom"
+                    class="fa-solid fa-angle-down nav_icon"
+                  ></i>
+                </div>
+                <ul id="dropdown-bottom" class="dropdown">
                   <li class="dropdown_item">
-                    <a href="./Pants/Pants.html">pants</a>
+                    <a href="../Bottom/Pants/Pants.html">pants</a>
                   </li>
                   <li class="dropdown_item">
-                    <a href="./Jean_Denin/Jean_Denin.html">jean & denin</a>
+                    <a href="../Bottom/Jean_Denin/Jean_Denin.html"
+                      >jean & denin</a
+                    >
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href="../Accessories/Accessories.html"
-                  >ACCESSORY
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown">
+              <li class="nav-item nav-item_has-children">
+                <div class="nav_item-title">
+                  <a href="../Accessories/Accessories.html">ACCESSORY </a>
+                  <i
+                    id="icon_accessory"
+                    class="fa-solid fa-angle-down nav_icon"
+                  ></i>
+                </div>
+                <ul id="dropdown-accessory" class="dropdown">
                   <li class="dropdown_item">
                     <a href="../Accessories/Bag/Bag.html">bag</a>
                   </li>
@@ -137,11 +148,6 @@
       <!-- start blog_header -->
       <div class="header_blog">
         <div class="header_blog-container">
-          <img
-            src="../TOP/img/header_blog/header_blog.png"
-            alt=""
-            class="header_blog-image"
-          />
           <div class="header_blog-content">
             <h1 class="header_blog-title">Bottom</h1>
           </div>

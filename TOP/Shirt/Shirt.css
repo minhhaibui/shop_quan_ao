@@ -805,28 +805,28 @@ body {
   .product_card-price {
     font-size: 12px;
   }
-  @media screen and (max-width: 740px) {
-    .header_top {
-      height: 51px;
-    }
-    #toggle {
-      padding: 5px;
-      font-size: 18px;
-    }
-    .logo {
-      max-width: 12rem;
-    }
-    .cart .search_icon {
-      margin-left: 18px;
-    }
-    .section_product-card {
-      width: calc((100% / 2) - 2.5rem);
-    }
-    .sort_cate {
-      display: none;
-    }
-    .content_container {
-      max-width: 95%;
-    }
+}
+@media screen and (max-width: 740px) {
+  .header_top {
+    height: 51px;
+  }
+  #toggle {
+    padding: 5px;
+    font-size: 18px;
+  }
+  .logo {
+    max-width: 12rem;
+  }
+  .cart .search_icon {
+    margin-left: 18px;
+  }
+  .section_product-card {
+    width: calc((100% / 2) - 2.5rem);
+  }
+  .sort_cate {
+    display: none;
+  }
+  .content_container {
+    max-width: 95%;
   }
 }

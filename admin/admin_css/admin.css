@@ -40,10 +40,17 @@ body {
   color: #000;
 }
 
+<<<<<<< HEAD
 .main {
   position: relative;
   margin-top: 50px;
   height: 100vh;
+=======
+.main{
+    position: relative;
+    margin-top: 50px;
+    height: 100vh;
+>>>>>>> aa0750c82bad52b22eee3ed6dead29641924dfb9
 }
 
 .container {
@@ -81,7 +88,7 @@ body {
   border-radius: 5px;
   padding: 12px;
   box-shadow: 5px 10px rgb(147, 138, 138);
-  height: 100%;
+  height: 100vh;
 }
 
 .heading-content {
@@ -216,6 +223,10 @@ body {
 
 .avatar-img {
   margin-left: 50px;
+<<<<<<< HEAD
+=======
+  /* margin-top: 50px; */
+>>>>>>> aa0750c82bad52b22eee3ed6dead29641924dfb9
 }
 
 .sub-text {
@@ -298,6 +309,7 @@ body {
   color: #fff;
 }
 
+<<<<<<< HEAD
 .sign-out-btn {
   background-color: rgb(218, 218, 64);
   width: 64px;
@@ -310,6 +322,21 @@ body {
   right: 20px;
   border-radius: 20px 0 0 20px;
 }
+=======
+.sign-out-btn{
+    background-color: rgb(218, 218, 64);
+    width: 64px;
+    height: 32px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:20px;
+    right: 20px;
+    border-radius: 20px 0 0 20px;
+    /* position: absolute; */
+} 
+>>>>>>> aa0750c82bad52b22eee3ed6dead29641924dfb9
 
 .sign-out-btn:hover {
   background-color: #000;
@@ -406,8 +433,13 @@ body {
   border: 3px solid rgb(60, 53, 200);
 }
 
+<<<<<<< HEAD
 .avatar-item {
   position: fixed;
+=======
+.avatar-item{
+    position: absolute;
+>>>>>>> aa0750c82bad52b22eee3ed6dead29641924dfb9
 }
 
 .list-btn {
@@ -444,9 +476,15 @@ table {
   border-collapse: collapse;
 }
 
+<<<<<<< HEAD
 .list-product {
   height: 500px;
   overflow: auto;
+=======
+.list-product{
+    height: 500;
+    overflow: auto;
+>>>>>>> aa0750c82bad52b22eee3ed6dead29641924dfb9
 }
 
 .lable-item {
