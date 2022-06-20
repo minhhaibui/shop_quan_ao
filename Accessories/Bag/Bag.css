@@ -6,11 +6,6 @@
   --grey: #dddddd;
 }
 
-.row {
-  max-width: 25%;
-  padding: 0 10px;
-}
-
 .font-icon {
   font-size: 16px;
 }
@@ -496,11 +491,13 @@ body {
 .row-footer {
   padding-bottom: 20px;
   display: flex;
-  width: 80%;
+  flex-wrap: wrap;
+  width: 90%;
   justify-content: center;
 }
 
 .logo-footer {
+  width: 25%;
 }
 
 .img-footer {
@@ -519,6 +516,7 @@ body {
 }
 
 .logo-number {
+ 
 }
 
 .logo-item {
@@ -805,6 +803,14 @@ body {
   .product_card-price {
     font-size: 12px;
   }
+
+  /* footer  */
+  .logo-footer{
+    width: 50%;
+  }
+  .container-footer{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 740px) {
   .header_top {
@@ -828,5 +834,13 @@ body {
   }
   .content_container {
     max-width: 95%;
+  }
+
+  /* footer  */
+  .logo-footer{
+    width: 100%;
+  }
+  .container-footer{
+    width: 100%;
   }
 }
