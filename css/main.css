@@ -427,6 +427,7 @@ img {
   align-items: center;
 }
 .product_card-series {
+  text-transform: uppercase;
   margin-top: 15px;
   font-size: 14px;
   font-weight: 500;
@@ -434,6 +435,12 @@ img {
   color: #c7bfbf;
 }
 .product_card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
   margin: 2px 0px;
   font-size: 14px;
   font-weight: 500;
@@ -921,8 +928,8 @@ img {
   background: red;
 }
 
-/* start modal */ 
-.modal{
+/* start modal */
+.modal {
   position: fixed;
   right: 0;
   left: 0;
@@ -934,13 +941,13 @@ img {
 
 /* .modal-img {
   /* width: 100%s;
-} */ 
+} */
 
-.modal.open{
+.modal.open {
   display: block;
 }
 
-.modal-container{
+.modal-container {
   background-color: #fff;
   margin: auto;
   width: 800px;
@@ -950,32 +957,32 @@ img {
   position: relative;
 }
 
-.header-modal{
+.header-modal {
   padding: 15px;
   border-bottom: 1px solid #ccc;
   font-weight: 500;
 }
 
-.header-modal a{
+.header-modal a {
   color: #dc4e3f;
 }
 
-.quantity-cart{
+.quantity-cart {
   padding: 15px;
   font-size: 13px;
   letter-spacing: 2px;
 }
 
-.quantity-cart a{
+.quantity-cart a {
   color: #000;
   font-weight: 500;
 }
 
-.quantity-cart span{
+.quantity-cart span {
   color: #dc4e3f;
 }
 
-.header-table{
+.header-table {
   background-color: #ddd;
 }
 
@@ -983,7 +990,8 @@ img {
   border-bottom: 1px solid #ccc;
 } */
 
-th,td{
+th,
+td {
   padding: 10px;
   vertical-align: top;
 }
@@ -992,40 +1000,40 @@ tr {
   border-bottom: 1px solid #ccc;
 }
 
-.img-product-modal{
+.img-product-modal {
   display: flex;
 }
 
-.add-product{
+.add-product {
   margin-left: 10px;
   margin-top: 5px;
 }
 
-.header-product-add{
+.header-product-add {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.header-product-add a{
+.header-product-add a {
   color: #000;
 }
 
-.header-product-add a:hover{
+.header-product-add a:hover {
   color: #dc4e3f;
 }
 
-.sub-header-add{
+.sub-header-add {
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.product-recently{
+.product-recently {
   font-size: 12px;
   margin-bottom: 2px;
 }
 
-.product-recently i{
+.product-recently i {
   color: #d02626;
 }
 
@@ -1041,19 +1049,19 @@ tr {
   text-align: center;
 }
 
-.btn-value{
-  padding: 3px 6px ;
+.btn-value {
+  padding: 3px 6px;
   cursor: pointer;
 }
 
-.sum-money{
+.sum-money {
   padding: 10px;
   text-align: right;
   display: flex;
   justify-content: space-between;
 }
 
-.sum-money .total-money{
+.sum-money .total-money {
   color: #dc4e3f;
 }
 
@@ -1072,7 +1080,7 @@ tr {
   font-size: 10px;
 }
 
-.btn-pay-modal{
+.btn-pay-modal {
   width: 98%;
   color: #fff;
   background-color: #000;
@@ -1085,12 +1093,12 @@ tr {
   font-weight: 600;
 }
 
-.btn-pay-modal:hover{
+.btn-pay-modal:hover {
   background-color: #dc4e3f;
   color: #fff;
 }
 
-.btn-close-modal i{
+.btn-close-modal i {
   position: absolute;
   background-color: #000;
   color: #fff;
@@ -1105,12 +1113,12 @@ tr {
   cursor: pointer;
 }
 
-.size-product-item{
+.size-product-item {
   display: flex;
   height: 32px;
 }
 
-.size{
+.size {
   width: 35px;
   height: 26px;
   border: 1px solid #e6e6e6;
@@ -1124,18 +1132,18 @@ tr {
   background-color: #dc4e3f;
 }
 
-.color-product{
+.color-product {
   display: flex;
 }
 
-.text-color-product{
+.text-color-product {
   font-weight: 500;
   width: 75px;
   line-height: 30px;
   font-size: 15px;
 }
 
-.color-item{
+.color-item {
   display: flex;
   border: 1px solid #e6e6e6;
   padding: 2px;
@@ -1143,12 +1151,12 @@ tr {
   height: 36px;
 }
 
-.img-color{
+.img-color {
   height: 30px;
   width: 30px;
 }
 
-.sub-text{
+.sub-text {
   font-size: 13px;
   line-height: 30px;
   padding: 0 5px;

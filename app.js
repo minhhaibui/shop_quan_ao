@@ -25,8 +25,9 @@ $(document).ready(function () {
     $(".section_product").slick({
       slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
+      pauseOnDotsHover: true,
       prevArrow: `<button type='button' class='slick-prev slick-arrow'> <i class="ti-angle-left icon-next"></i></button>`,
       nextArrow: `<button type='button' class='slick-next slick-arrow'> <i class="ti-angle-right icon-next"></i></button>`,
 

@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../css/resset.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Đăng nhập</title>
-  <link rel="stylesheet" href="../css/resset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/font/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link rel="stylesheet" href="./admin_css/login.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/font/themify-icons-font/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="./admin_css/login.css" />
-</head>
-
-<body>
-  <div class="container">
-    <img src="https://dosi-in.com/fulltag-chinh-hang-mu-bucket-vanh-non-tron-clownz-x-pepsi/" alt="">
-    <div class="form_login">
-      <div class="form_login-header">
-        <span class="form_login-text">Login</span>
-        <img src="./admin_css/icon/favicon.png" alt="">
-      </div>
-      <div class="login_button">
-        <form action="./admin.html" style="text-align: center;">
-          <input type="text" placeholder="username" required class="login_button-email" />
-          <input type="password" placeholder="password" required class="login_button-password" />
-          <a href="" class="login_butuon-text" style="display: block;">i forgot my password ?</a>
-          <button class="login_button-login">login</button>
-        </form>
-
+  <body>
+    <div class="container">
+      <img
+        src="https://dosi-in.com/fulltag-chinh-hang-mu-bucket-vanh-non-tron-clownz-x-pepsi/"
+        alt=""
+      />
+      <div class="form_login">
+        <div class="form_login-header">
+          <span class="form_login-text">Login</span>
+          <img src="./admin_css/icon/favicon.png" alt="" />
+        </div>
+        <div class="login_button">
+          <form action="./admin.html" style="text-align: center">
+            <input
+              type="text"
+              placeholder="username"
+              required
+              class="login_button-email"
+            />
+            <input
+              type="password"
+              placeholder="password"
+              required
+              class="login_button-password"
+            />
+            <a href="" class="login_butuon-text" style="display: block"
+              >i forgot my password ?</a
+            >
+            <button class="login_button-login">login</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-<!-- <script src="./admin.html"></script> -->
-<script>
-  const tk = document.querySelector('.login_button-email');
-  const pw = document.querySelector('.login_button-password');
-  const btn = document.querySelector('.login_button-login');
-  const login = document.querySelector('.login_button');
+  </body>
+  <!-- <script src="./admin.html"></script> -->
+  <script>
+    const tk = document.querySelector(".login_button-email");
+    const pw = document.querySelector(".login_button-password");
+    const btn = document.querySelector(".login_button-login");
+    const login = document.querySelector(".login_button");
 
-  btn.addEventListener('click', function () {
-    if (tk.value == 'vutuandung' && pw.value == '123456') {
-      document.location = './admin.html';
-    }
-    else {
-      alert('tài khoản hoặc mật khẩu không chính xác!!!')
-    }
-  })
+    btn.addEventListener("click", function () {
+      if (tk.value == "vutuandung" && pw.value == "123456") {
+        document.location = "./admin.html";
+      } else {
+        alert("tài khoản hoặc mật khẩu không chính xác!!!");
+      }
+    });
 
-  login.addEventListener('keyup', function (e) {
-    if (e.keyCode === 13) {
-      btn.click();
-    }
-  })
-</script>
-
+    login.addEventListener("keyup", function (e) {
+      if (e.keyCode === 13) {
+        btn.click();
+      }
+    });
+  </script>
 </html>
