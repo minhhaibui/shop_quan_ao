@@ -1,115 +1,170 @@
 :root {
-    font-size: 62.5%;
-    --color1: #682f95;
-    --color2: #604aa8;
-    --color3: #3e166a;
-    --color_icon: #65bbf2;
-    --color_border: #702f61;
-  }
+  font-size: 62.5%;
+  --color1: #682f95;
+  --color2: #604aa8;
+  --color3: #3e166a;
+  --color_icon: #65bbf2;
+  --color_border: #702f61;
+}
 
-  body{
-    background-image: url(./icon/avatar.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 70%;
-  }
-  .container {
-    width: 100vw;
-    height: 100vh;
-    background-image:url(https://beecost.vn/ao-so-mi-nam-ngan-tay-clownz-headshot-p.1__6242359740__144509299);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 20%;
-    position: relative;
-  }
-  .form_login {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 70%;
-    position: absolute;
-    left: 78%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
-    border: 2px solid #000;
-    border-radius: 22px;
-    /* background-image: url(./icon/favicon.png) ; */
-    background-position: bottom;
-    background-repeat: no-repeat; 
-    background-size: 50%; 
-  }
-  .form_login-header {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .form_login-text {
-    font-size: 4rem;
-    color: #000;
+.main{
   
-    display: inline-block;
-    max-width: 180px;
-  }
-  .form_login-icon {
-    width: 10rem;
-    height: 10rem;
-    font-size: 5rem;
-    color: var(--color_icon);
-    border: 2px solid var(--color_border);
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.img-avatar{
+  width: 67%;
+  height: 100%;
+}
+.form_login {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 60%;
+  position: absolute;
+  left: 78%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+  border: 2px solid #000;
+  border-radius: 22px;
   
-  .icon-facebook {
-    margin-left: 1rem;
-  }
-  .login_button {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    flex: 1;
-  }
-  .login_button-email,
-  .login_button-password {
-    width: 80%;
-    height: 35px;
-    border: 2px solid var(--color_border);
-    border-radius: 5px;
-    padding: 2px 15px;
-    margin-bottom: 1.5rem;
-    background-color: var(--color3);
-    font-size: 2rem;
-    color: aliceblue;
-  }
-  .login_butuon-text {
-    font-size: 2rem;
-    color: var(--color_border);
-    margin-bottom: 38px;
-  }
-  .login_button-login {
-    width: 284px;
-    height: 43px;
-    border-radius: 5px;
-    font-size: 2rem;
-    border: none;
-  }
-  .login_button-login {
-    background-color: #14b166;
-    margin-bottom: 4rem;
-  }
-  hr {
-    width: 100%;
-    margin-bottom: 4rem;
-  }
-  .login_button-login:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-  
+}
+.form_login-header {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_login-text {
+  font-size: 4rem;
+  color: #000;
+
+  display: inline-block;
+  max-width: 180px;
+}
+.form_login-icon {
+  width: 10rem;
+  height: 10rem;
+  font-size: 5rem;
+  color: var(--color_icon);
+  border: 2px solid var(--color_border);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex: 1;
+}
+.login_button-email,
+.login_button-password {
+  width: 80%;
+  height: 35px;
+  border: 2px solid var(--color_border);
+  border-radius: 5px;
+  padding: 2px 15px;
+  margin-bottom: 1.5rem;
+  background-color: var(--color3);
+  font-size: 2rem;
+  color: aliceblue;
+}
+.login_butuon-text {
+  font-size: 2rem;
+  color: var(--color_border);
+  margin-bottom: 38px;
+}
+.login_button-login {
+  width: 284px;
+  height: 43px;
+  border-radius: 5px;
+  font-size: 2rem;
+  border: none;
+}
+.login_button-login {
+  background-color: #14b166;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+hr {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.login_button-login:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+/* mobile */
+@media only screen and (max-width: 739px) {
+.img-avatar{
+  display: none;
+}
+
+.form_login{
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  border: none;
+}
+
+.login_button-login{
+  width: 85%;
+  height: 55px;
+}
+
+}
+
+/* tablet */
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+.img-avatar{
+  display: none;
+}
+
+.form_login{
+  width: 80%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+}
+
+.form_login-header{
+  margin: 7rem 0;
+}
+
+.form_login-header>img{
+  width: 68%;
+}
+
+.login_button-email,
+.login_button-password{
+  padding: 10px 15px;
+}
+
+.login_button-login{
+  width: 85%;
+  height: 55px;
+}
+
+.img-avatar {
+  width: 75%;
+  height: 80%;
+  margin-left: -100px;
+}
+
+
+}
