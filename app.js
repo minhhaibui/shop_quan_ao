@@ -1,8 +1,3 @@
-// const $ = document.querySelector.bind(document);
-// const $$ = document.querySelectorAll.bind(document);
-
-// const backTopBtn = $('.backtop');
-
 //Backtop
 $(document).ready(function () {
   $(window).scroll(function () {
