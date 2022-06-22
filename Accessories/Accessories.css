@@ -334,8 +334,7 @@ body {
   /* transform: translateX(2rem); */
 }
 
-.front::after,
-.back::after {
+.NewArrival::after {
   content: "New Arrival";
   width: 95px;
   height: 20px;
