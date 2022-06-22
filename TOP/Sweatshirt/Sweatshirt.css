@@ -377,6 +377,19 @@ body {
   text-align: center;
   line-height: 20px;
 }
+.empty::after {
+  content: "";
+  width: 95px;
+  height: 20px;
+  background-color: transparent;
+  color: white;
+  padding: 2px;
+  position: absolute;
+  left: 0;
+  top: 2%;
+  text-align: center;
+  line-height: 20px;
+}
 
 .product_card-content {
   display: flex;
@@ -804,10 +817,10 @@ body {
   }
 
   /* footer  */
-  .logo-footer{
+  .logo-footer {
     width: 50%;
   }
-  .container-footer{
+  .container-footer {
     width: 100%;
   }
 }
@@ -835,12 +848,11 @@ body {
     max-width: 95%;
   }
 
-    /* footer  */
-    .logo-footer{
-      width: 100%;
-    }
-    .container-footer{
-      width: 100%;
-    }
-  
+  /* footer  */
+  .logo-footer {
+    width: 100%;
+  }
+  .container-footer {
+    width: 100%;
+  }
 }

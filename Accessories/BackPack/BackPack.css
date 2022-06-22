@@ -337,8 +337,7 @@ body {
   /* transform: translateX(2rem); */
 }
 
-.front::after,
-.back::after {
+.NewArrival::after {
   content: "New Arrival";
   width: 95px;
   height: 20px;
@@ -804,13 +803,12 @@ body {
   }
 
   /* footer  */
-  .logo-footer{
+  .logo-footer {
     width: 50%;
   }
-  .container-footer{
+  .container-footer {
     width: 100%;
   }
-
 }
 @media screen and (max-width: 740px) {
   .header_top {
@@ -837,10 +835,10 @@ body {
   }
 
   /* footer  */
-  .logo-footer{
+  .logo-footer {
     width: 100%;
   }
-  .container-footer{
+  .container-footer {
     width: 100%;
   }
 }

@@ -6,7 +6,6 @@
   --grey: #dddddd;
 }
 
-
 .font-icon {
   font-size: 16px;
 }
@@ -338,8 +337,7 @@ body {
   /* transform: translateX(2rem); */
 }
 
-.front::after,
-.back::after {
+.NewArrival::after {
   content: "New Arrival";
   width: 95px;
   height: 20px;
@@ -805,10 +803,10 @@ body {
   }
 
   /* footer  */
-  .logo-footer{
+  .logo-footer {
     width: 50%;
   }
-  .container-footer{
+  .container-footer {
     width: 100%;
   }
 }
@@ -837,10 +835,10 @@ body {
   }
 
   /* footer  */
-  .logo-footer{
+  .logo-footer {
     width: 100%;
   }
-  .container-footer{
+  .container-footer {
     width: 100%;
   }
 }
