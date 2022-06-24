@@ -62,7 +62,6 @@ const navsile = () => {
       const nav_parent = nav_item.parentElement.parentElement;
       const dropdown = nav_parent.querySelector(".dropdown");
       dropdown.classList.toggle("dropdown_active");
-      console.log(dropdown);
     });
   });
 };
