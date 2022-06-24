@@ -166,12 +166,11 @@ $(".sortNewArrive").click(function () {
 
 //Sắp xếp giá thấp đến cao
 const price = [];
+for (var i = 0; i < product.length; i++) {
+  price.push(Number(product[i].price));
+}
 
 function sortPriceUp() {
-  for (var i = 0; i < product.length; i++) {
-    price.push(Number(product[i].price));
-  }
-
   price.sort();
 
   for (var i = 0; i < price.length; ) {
